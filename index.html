@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="stylesheet" href="./css/input.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>tailwind css project</title>
+  </head>
+  <body>
+    <!-- start header -->
+    <header class="sticky top-0 z-50 bg-white">
+      <div class="header h-20 mx-auto">
+        <div
+          class="flex justify-between items-center p-4 mx-auto w-9/12 max-xl:w-11/12 h-20 relative"
+        >
+          <div class="logo">
+            <a href="#">
+              <img src="./images/logo.png.webp" alt="" class="w-full" />
+            </a>
+          </div>
+          <div class="links">
+            <i
+              class="fa-solid fa-bars max-md:text-3xl max-md:cursor-pointer"
+            ></i>
+            <!-- start menu  -->
+            <div class="menu max-md:invisible max-md:opacity-0 duration-500">
+              <!-- start main ul -->
+              <ul
+                class="main-ul flex md:items-center max-md:flex-col max-md:absolute max-md:left-0 max-md:mt-6"
+              >
+                <li class="p-5 block max-md:p-3">
+                  <a href="index.html" class="block duration-300 active">
+                    Home
+                  </a>
+                </li>
+                <li class="p-5 block down relative max-md:p-3">
+                  <a href="#" class="block relative duration-300">Shop</a>
+                  <!--start shop menu -->
+                  <div
+                    class="other absolute max-md:left-16 max-md:top-0 max-md:mt-0"
+                  >
+                    <ul class="mt-3 bg-white w-56 max-md:p-0 max-md:ml-3">
+                      <li>
+                        <a
+                          href="shop-category.html"
+                          class="block p-3 pr-10 border-b duration-500"
+                        >
+                          Shop Category
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="product-details.html"
+                          class="block p-3 pr-10 border-b duration-500"
+                        >
+                          product details
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="product-checkout.html"
+                          class="block p-3 pr-10 border-b duration-500"
+                        >
+                          product checkout
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="shopping-cart.html"
+                          class="block p-3 pr-10 border-b duration-500"
+                        >
+                          shopping chart
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="confirmation.html"
+                          class="block p-3 pr-10 duration-500"
+                        >
+                          confirmation
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- end shop menu -->
+                </li>
+                <li class="p-5 block down relative max-md:p-3">
+                  <a href="#" class="block relative duration-300">Blog</a>
+                  <!-- start blog menu -->
+                  <div
+                    class="other absolute max-md:left-16 max-md:top-0 max-md:mt-0"
+                  >
+                    <ul class="mt-3 bg-white w-52 max-md:p-0 max-md:ml-3">
+                      <li>
+                        <a
+                          href="blog.html"
+                          class="block p-3 pr-10 border-b duration-500"
+                        >
+                          blog
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block p-3 pr-10 duration-500">
+                          blog details
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- end blog menu -->
+                </li>
+                <li class="p-5 block down relative max-md:p-3">
+                  <a href="#" class="block relative duration-300">Pages</a>
+                  <!--start pages menu -->
+                  <div
+                    class="other absolute max-md:left-16 max-md:top-0 max-md:mt-0"
+                  >
+                    <ul class="mt-3 bg-white w-52 max-md:p-0 max-md:ml-3">
+                      <li>
+                        <a
+                          href="login-page.html"
+                          class="block p-3 pr-10 border-b duration-500"
+                        >
+                          log in
+                        </a>
+                      </li>
+                      <li>
+                        <a href="tracking-page.html" class="block p-3 pr-10 duration-500">
+                          tracking
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- end pages menu -->
+                </li>
+                <li class="p-5 block max-md:p-3">
+                  <a href="contact-page.html" class="block duration-300">Contact</a>
+                </li>
+                <ul class="flex other-links max-md:flex-col">
+                  <li class="p-3 block">
+                    <a href="#" class="block duration-300">
+                      <i class="fa-solid fa-bag-shopping"></i>
+                    </a>
+                  </li>
+                  <li class="p-3 block relative">
+                    <i class="fa-solid fa-magnifying-glass cursor-pointer"></i>
+                  </li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+    <main>
+      <!-- start intro  -->
+      <section class="intro">
+        <div class="my-container">
+          <div class="main-intro flex items-center gap-8">
+            <div class="text flex-1">
+              <h1 class="text-7xl font-bold mb-8 max-sm:text-5xl">
+                Nike New
+                <br />
+                Collection!
+              </h1>
+              <p class="mb-8">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam,
+                in. Dolorum officiis id suscipit voluptatum, laboriosam neque
+                eaque praesentium tempora quaerat eligendi cum rem fugit itaque
+                iusto magni, animi qui.
+              </p>
+              <div class="add-bag flex items-center gap-5">
+                <a
+                  href="#"
+                  class="w-12 h-12 rounded-full flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-plus text-xl text-white"></i>
+                </a>
+                <p>Add To Bag</p>
+              </div>
+            </div>
+            <div class="image max-lg:hidden">
+              <img src="./images/banner-img.png.webp" class="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end intro  -->
+      <!-- start features -->
+      <section class="features pt-24 pb-24">
+        <div class="my-container">
+          <div
+            class="features-area grid gap-6 bg-white shadow-xl xl:p-6 pt-6 pb-6"
+          >
+            <!-- 1 -->
+            <div class="box text-center flex-1">
+              <div class="icon">
+                <i class="fa-solid fa-truck text-3xl mb-6"></i>
+              </div>
+              <div class="text">
+                <p>Free Delivery</p>
+                <span>Free Shipping on all order</span>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="box text-center flex-1">
+              <div class="icon">
+                <i class="fa-solid fa-repeat text-3xl mb-6"></i>
+              </div>
+              <div class="text">
+                <p>Return Policy</p>
+                <span>Free Shipping on all order</span>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="box text-center flex-1">
+              <div class="icon">
+                <i class="fa-solid fa-headset text-3xl mb-6"></i>
+              </div>
+              <div class="text">
+                <p>24/7 Support</p>
+                <span>Free Shipping on all order</span>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="box text-center flex-1">
+              <div class="icon">
+                <i class="fa-solid fa-database text-3xl mb-6"></i>
+              </div>
+              <div class="text">
+                <p>Secure Payment</p>
+                <span>Free Shipping on all order</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end features -->
+      <!-- start gallery -->
+      <section class="gallery-area">
+        <div class="my-container">
+          <div class="gallery flex items-center max-xl:flex-col">
+            <!-- start left section -->
+            <div
+              class="left w-2/3 flex flex-1 flex-wrap max-xl:w-full max-md:flex-col"
+            >
+              <!-- 1 -->
+              <div class="image w-4/6 pl-4 pr-4 max-md:w-full">
+                <div class="mb-8 relative">
+                  <div class="over-lay absolute">
+                    <a
+                      href="#"
+                      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-base uppercase"
+                    >
+                      sneaker for sport
+                    </a>
+                  </div>
+                  <img src="./images/c1.jpg.webp" class="w-full" />
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="image w-2/6 pl-4 pr-4 max-md:w-full">
+                <div class="mb-8 relative">
+                  <div class="over-lay absolute">
+                    <a
+                      href="#"
+                      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-base uppercase"
+                    >
+                      sneaker for sport
+                    </a>
+                  </div>
+                  <img src="./images/c2.jpg.webp" class="w-full" />
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="image w-2/6 pl-4 pr-4 max-md:w-full">
+                <div class="mb-8 relative">
+                  <div class="over-lay absolute">
+                    <a
+                      href="#"
+                      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-base uppercase"
+                    >
+                      sneaker for sport
+                    </a>
+                  </div>
+                  <img src="./images/c3.jpg.webp" class="w-full" />
+                </div>
+              </div>
+              <!-- 4 -->
+              <div class="image w-4/6 pl-4 pr-4 max-md:w-full">
+                <div class="mb-8 relative">
+                  <div class="over-lay absolute">
+                    <a
+                      href="#"
+                      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-base uppercase"
+                    >
+                      sneaker for sport
+                    </a>
+                  </div>
+                  <img src="./images/c4.jpg.webp" class="w-full" />
+                </div>
+              </div>
+            </div>
+            <!-- end left section -->
+            <!-- start right section  -->
+            <div class="right w-2/6 pl-4 pr-4 max-xl:w-full">
+              <div class="image">
+                <div class="mb-8 relative">
+                  <div class="over-lay absolute">
+                    <a
+                      href="#"
+                      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-base uppercase"
+                    >
+                      sneaker for sport
+                    </a>
+                  </div>
+                  <img src="./images/c5.jpg.webp" class="w-full" />
+                </div>
+              </div>
+            </div>
+            <!-- end right section  -->
+          </div>
+        </div>
+      </section>
+      <!-- end gallery -->
+      <!-- start products -->
+      <section class="products-area pt-24 pb-24">
+        <div class="my-container">
+          <!-- start intro  -->
+          <div class="products">
+            <div class="int flex justify-center">
+              <div class="w-1/2 flex flex-col items-center gap-4">
+                <div class="row flex gap-8 items-center">
+                  <div class="left relative">
+                    <a href="#" class="hover:opacity-50 duration-300">
+                      <img src="./images/prev.png.webp" alt="" />
+                    </a>
+                  </div>
+                  <div class="cont flex-1 text-center">
+                    <h2 class="text-4xl uppercase">coming product</h2>
+                  </div>
+                  <div class="right relative">
+                    <a href="#" class="hover:opacity-50 duration-300">
+                      <img src="./images/next.png.webp" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="paragraph text-center">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- end intro -->
+            <!-- start products -->
+            <div class="cards pt-14 grid gap-8">
+              <!-- 1 -->
+              <div class="box">
+                <div class="image">
+                  <img src="./images/p1.jpg.webp" alt="" class="w-full" />
+                </div>
+                <div class="dis">
+                  <h5 class="text-lg uppercase mb-3 mt-3">
+                    adidas New Hammer solfege Sports person
+                  </h5>
+                </div>
+                <div class="price flex gap-4">
+                  <span class="font-bold">150.00$</span>
+                  <span class="font-bold line-through opacity-50">210.00$</span>
+                </div>
+                <div class="information flex gap-2 pt-4">
+                  <!-- 1 -->
+                  <a href="#" class="inf">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <p class="">add to bag</p>
+                  </a>
+                  <!-- 2 -->
+                  <a href="#" class="inf">
+                    <i class="fa-regular fa-heart"></i>
+                    <p class="">wishes</p>
+                  </a>
+                  <!-- 3 -->
+                  <a href="#" class="inf">
+                    <i class="fa-solid fa-repeat"></i>
+                    <p class="">compare</p>
+                  </a>
+                  <!-- 4 -->
+                  <a href="#" class="inf">
+                    <i class="fa-solid fa-minimize"></i>
+                    <p class="">view more</p>
+                  </a>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="box">
+                <div class="image">
+                  <img src="./images/p2.jpg.webp" alt="" class="w-full" />
+                </div>
+                <div class="dis">
+                  <h5 class="text-lg uppercase mb-3 mt-3">
+                    adidas New Hammer solfege Sports person
+                  </h5>
+                </div>
+                <div class="price flex gap-4">
+                  <span class="font-bold">150.00$</span>
+                  <span class="font-bold line-through opacity-50">210.00$</span>
+                </div>
+                <div class="information flex gap-2 pt-4">
+                  <!-- 1 -->
+                  <a href="#" class="inf">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <p class="">add to bag</p>
+                  </a>
+                  <!-- 2 -->
+                  <a href="#" class="inf">
+                    <i class="fa-regular fa-heart"></i>
+                    <p class="">wishes</p>
+                  </a>
+                  <!-- 3 -->
+                  <a href="#" class="inf">
+                    <i class="fa-solid fa-repeat"></i>
+                    <p class="">compare</p>
+                  </a>
+                  <!-- 4 -->
+                  <a href="#" class="inf">
+                    <i class="fa-solid fa-minimize"></i>
+                    <p class="">view more</p>
+                  </a>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="box">
+                <div class="image">
+                  <img src="./images/p3.jpg.webp" alt="" class="w-full" />
+                </div>
+                <div class="dis">
+                  <h5 class="text-lg uppercase mb-3 mt-3">
+                    adidas New Hammer solfege Sports person
+                  </h5>
+                </div>
+                <div class="price flex gap-4">
+                  <span class="font-bold">150.00$</span>
+                  <span class="font-bold line-through opacity-50">210.00$</span>
+                </div>
+                <div class="information flex gap-2 pt-4">
+                  <!-- 1 -->
+                  <a href="#" class="inf">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <p class="">add to bag</p>
+                  </a>
+                  <!-- 2 -->
+                  <a href="#" class="inf">
+                    <i class="fa-regular fa-heart"></i>
+                    <p class="">wishes</p>
+                  </a>
+                  <!-- 3 -->
+                  <a href="#" class="inf">
+                    <i class="fa-solid fa-repeat"></i>
+                    <p class="">compare</p>
+                  </a>
+                  <!-- 4 -->
+                  <a href="#" class="inf">
+                    <i class="fa-solid fa-minimize"></i>
+                    <p class="">view more</p>
+                  </a>
+                </div>
+              </div>
+              <!-- 4 -->
+              <div class="box">
+                <div class="image">
+                  <img src="./images/p4.jpg.webp" alt="" class="w-full" />
+                </div>
+                <div class="dis">
+                  <h5 class="text-lg uppercase mb-3 mt-3">
+                    adidas New Hammer solfege Sports person
+                  </h5>
+                </div>
+                <div class="price flex gap-4">
+                  <span class="font-bold">150.00$</span>
+                  <span class="font-bold line-through opacity-50">210.00$</span>
+                </div>
+                <div class="information flex gap-2 pt-4">
+                  <!-- 1 -->
+                  <a href="#" class="inf">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <p class="">add to bag</p>
+                  </a>
+                  <!-- 2 -->
+                  <a href="#" class="inf">
+                    <i class="fa-regular fa-heart"></i>
+                    <p class="">wishes</p>
+                  </a>
+                  <!-- 3 -->
+                  <a href="#" class="inf">
+                    <i class="fa-solid fa-repeat"></i>
+                    <p class="">compare</p>
+                  </a>
+                  <!-- 4 -->
+                  <a href="#" class="inf">
+                    <i class="fa-solid fa-minimize"></i>
+                    <p class="">view more</p>
+                  </a>
+                </div>
+              </div>
+              <!-- 5 -->
+              <div class="box">
+                <div class="image">
+                  <img src="./images/p5.jpg.webp" alt="" class="w-full" />
+                </div>
+                <div class="dis">
+                  <h5 class="text-lg uppercase mb-3 mt-3">
+                    adidas New Hammer solfege Sports person
+                  </h5>
+                </div>
+                <div class="price flex gap-4">
+                  <span class="font-bold">150.00$</span>
+                  <span class="font-bold line-through opacity-50">210.00$</span>
+                </div>
+                <div class="information flex gap-2 pt-4">
+                  <!-- 1 -->
+                  <a href="#" class="inf">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <p class="">add to bag</p>
+                  </a>
+                  <!-- 2 -->
+                  <a href="#" class="inf">
+                    <i class="fa-regular fa-heart"></i>
+                    <p class="">wishes</p>
+                  </a>
+                  <!-- 3 -->
+                  <a href="#" class="inf">
+                    <i class="fa-solid fa-repeat"></i>
+                    <p class="">compare</p>
+                  </a>
+                  <!-- 4 -->
+                  <a href="#" class="inf">
+                    <i class="fa-solid fa-minimize"></i>
+                    <p class="">view more</p>
+                  </a>
+                </div>
+              </div>
+              <!-- 6 -->
+              <div class="box">
+                <div class="image">
+                  <img src="./images/p6.jpg.webp" alt="" class="w-full" />
+                </div>
+                <div class="dis">
+                  <h5 class="text-lg uppercase mb-3 mt-3">
+                    adidas New Hammer solfege Sports person
+                  </h5>
+                </div>
+                <div class="price flex gap-4">
+                  <span class="font-bold">150.00$</span>
+                  <span class="font-bold line-through opacity-50">210.00$</span>
+                </div>
+                <div class="information flex gap-2 pt-4">
+                  <!-- 1 -->
+                  <a href="#" class="inf">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <p class="">add to bag</p>
+                  </a>
+                  <!-- 2 -->
+                  <a href="#" class="inf">
+                    <i class="fa-regular fa-heart"></i>
+                    <p class="">wishes</p>
+                  </a>
+                  <!-- 3 -->
+                  <a href="#" class="inf">
+                    <i class="fa-solid fa-repeat"></i>
+                    <p class="">compare</p>
+                  </a>
+                  <!-- 4 -->
+                  <a href="#" class="inf">
+                    <i class="fa-solid fa-minimize"></i>
+                    <p class="">view more</p>
+                  </a>
+                </div>
+              </div>
+              <!-- 7 -->
+              <div class="box">
+                <div class="image">
+                  <img src="./images/p7.jpg.webp" alt="" class="w-full" />
+                </div>
+                <div class="dis">
+                  <h5 class="text-lg uppercase mb-3 mt-3">
+                    adidas New Hammer solfege Sports person
+                  </h5>
+                </div>
+                <div class="price flex gap-4">
+                  <span class="font-bold">150.00$</span>
+                  <span class="font-bold line-through opacity-50">210.00$</span>
+                </div>
+                <div class="information flex gap-2 pt-4">
+                  <!-- 1 -->
+                  <a href="#" class="inf">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <p class="">add to bag</p>
+                  </a>
+                  <!-- 2 -->
+                  <a href="#" class="inf">
+                    <i class="fa-regular fa-heart"></i>
+                    <p class="">wishes</p>
+                  </a>
+                  <!-- 3 -->
+                  <a href="#" class="inf">
+                    <i class="fa-solid fa-repeat"></i>
+                    <p class="">compare</p>
+                  </a>
+                  <!-- 4 -->
+                  <a href="#" class="inf">
+                    <i class="fa-solid fa-minimize"></i>
+                    <p class="">view more</p>
+                  </a>
+                </div>
+              </div>
+              <!-- 8 -->
+              <div class="box">
+                <div class="image">
+                  <img src="./images/p8.jpg.webp" alt="" class="w-full" />
+                </div>
+                <div class="dis">
+                  <h5 class="text-lg uppercase mb-3 mt-3">
+                    adidas New Hammer solfege Sports person
+                  </h5>
+                </div>
+                <div class="price flex gap-4">
+                  <span class="font-bold">150.00$</span>
+                  <span class="font-bold line-through opacity-50">210.00$</span>
+                </div>
+                <div class="information flex gap-2 pt-4">
+                  <!-- 1 -->
+                  <a href="#" class="inf">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <p class="">add to bag</p>
+                  </a>
+                  <!-- 2 -->
+                  <a href="#" class="inf">
+                    <i class="fa-regular fa-heart"></i>
+                    <p class="">wishes</p>
+                  </a>
+                  <!-- 3 -->
+                  <a href="#" class="inf">
+                    <i class="fa-solid fa-repeat"></i>
+                    <p class="">compare</p>
+                  </a>
+                  <!-- 4 -->
+                  <a href="#" class="inf">
+                    <i class="fa-solid fa-minimize"></i>
+                    <p class="">view more</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- end products -->
+          </div>
+        </div>
+      </section>
+      <!-- end products -->
+      <!-- start Exclusive  -->
+      <section class="exclusive-section">
+        <div class="exclusive flex items-center max-lg:flex-col pt-24 pb-24">
+          <!-- start left  -->
+          <div class="left-section w-1/2 max-lg:w-full">
+            <div class="left container relative">
+              <div
+                class="section w-full max-md:pt-44 max-md:pb-44 flex items-center text-center justify-center flex-col"
+              >
+                <h2 class="text-white font-bold text-4xl mb-3">
+                  Exclusive Hot Deal Ends
+                  <br />
+                  Soon!
+                </h2>
+                <p class="text-white text-base">
+                  Who are in extremely love with eco friendly system.
+                </p>
+                <div
+                  class="counter flex bg-white justify-around w-full rounded-lg p-4 mt-6 mb-6"
+                >
+                  <div class="border-r flex-1">
+                    <h3 class="text-4xl">29</h3>
+                    <p>days</p>
+                  </div>
+                  <div class="border-r flex-1">
+                    <h3 class="text-4xl">10</h3>
+                    <p>hours</p>
+                  </div>
+                  <div class="border-r flex-1">
+                    <h3 class="text-4xl">40</h3>
+                    <p>mins</p>
+                  </div>
+                  <div class="flex-1">
+                    <h3 class="text-4xl">55</h3>
+                    <p>secs</p>
+                  </div>
+                </div>
+                <a
+                  href="#"
+                  class="primary mt-4 pt-3 pb-3 pr-7 pl-7 text-white text-lg rounded-3xl"
+                >
+                  shop now
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- end left  -->
+          <!-- start right  -->
+          <div class="right-section w-1/2 max-lg:w-full">
+            <div class="right">
+              <div
+                class="section w-full flex items-center text-center justify-around"
+              >
+                <div class="prev">
+                  <a href="#">
+                    <img
+                      src="./images/prev.png.webp"
+                      alt=""
+                      class="hover:opacity-50 duration-300 max-md:hidden"
+                    />
+                  </a>
+                </div>
+                <div class="cont">
+                  <div class="image">
+                    <img src="./images/e-p1.png.webp" alt="" />
+                  </div>
+                  <div class="price flex justify-center gap-6 mt-3">
+                    <span class="font-medium">150.00$</span>
+                    <span class="line-through font-medium opacity-50">
+                      210.00$
+                    </span>
+                  </div>
+                  <div class="dis">
+                    <h2 class="capitalize text-2xl font-medium mt-4 mb-4">
+                      adidas New Hammer
+                      <br />
+                      solfege Sports
+                      <br />
+                      person
+                    </h2>
+                  </div>
+                  <div class="bag">
+                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                    <span>add to bag</span>
+                  </div>
+                </div>
+                <div class="next">
+                  <a href="#">
+                    <img
+                      src="./images/next.png.webp"
+                      alt=""
+                      class="hover:opacity-50 duration-300 max-md:hidden"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end right  -->
+        </div>
+      </section>
+      <!-- end Exclusive  -->
+      <!-- start brands -->
+      <section class="brands-sectoin pt-24 pb-24">
+        <div class="my-container">
+          <div
+            class="brands flex gap-8 justify-around items-center max-md:flex-wrap"
+          >
+            <div class="image">
+              <a href="#">
+                <img
+                  src="./images/1.png.webp"
+                  alt=""
+                  class="opacity-30 hover:opacity-100 duration-300"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a href="#">
+                <img
+                  src="./images/2.png.webp"
+                  alt=""
+                  class="opacity-30 hover:opacity-100 duration-300"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a href="#">
+                <img
+                  src="./images/3.png.webp"
+                  alt=""
+                  class="opacity-30 hover:opacity-100 duration-300"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a href="#">
+                <img
+                  src="./images/4.png.webp"
+                  alt=""
+                  class="opacity-30 hover:opacity-100 duration-300"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a href="#">
+                <img
+                  src="./images/5.png.webp"
+                  alt=""
+                  class="opacity-30 hover:opacity-100 duration-300"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end brands -->
+      <!-- start last deals  -->
+      <section class="last-deals-section pb-24">
+        <div class="my-container">
+          <div class="last-deals">
+            <div class="flex justify-center mb-16">
+              <div class="deals-intro text-center w-1/2 max-md:w-full">
+                <h2 class="text-4xl mb-4 font-bold">Deals of the Week</h2>
+                <p class="">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+            <div class="cont flex max-md:flex-col max-md:gap-7">
+              <!-- start left -->
+              <div class="left grid gap-5 w-3/4 max-md:w-full">
+                <!-- 1 -->
+                <div class="box flex items-center gap-4">
+                  <div class="image">
+                    <img src="./images/r1.jpg.webp" alt="" />
+                  </div>
+                  <div class="info flex flex-col gap-1">
+                    <a href="#">BLACK LACE HEELS</a>
+                    <div class="price">
+                      <span>180.00$</span>
+                      <span class="line-through opacity-50">220.00$</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- 2 -->
+                <div class="box flex items-center gap-4">
+                  <div class="image">
+                    <img src="./images/r1.jpg.webp" alt="" />
+                  </div>
+                  <div class="info flex flex-col gap-1">
+                    <a href="#">BLACK LACE HEELS</a>
+                    <div class="price">
+                      <span>180.00$</span>
+                      <span class="line-through opacity-50">220.00$</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- 3 -->
+                <div class="box flex items-center gap-4">
+                  <div class="image">
+                    <img src="./images/r2.jpg.webp" alt="" />
+                  </div>
+                  <div class="info flex flex-col gap-1">
+                    <a href="#">BLACK LACE HEELS</a>
+                    <div class="price">
+                      <span>180.00$</span>
+                      <span class="line-through opacity-50">220.00$</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- 4 -->
+                <div class="box flex items-center gap-4">
+                  <div class="image">
+                    <img src="./images/r3.jpg.webp" alt="" />
+                  </div>
+                  <div class="info flex flex-col gap-1">
+                    <a href="#">BLACK LACE HEELS</a>
+                    <div class="price">
+                      <span>180.00$</span>
+                      <span class="line-through opacity-50">220.00$</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- 5 -->
+                <div class="box flex items-center gap-4">
+                  <div class="image">
+                    <img src="./images/r5.jpg.webp" alt="" />
+                  </div>
+                  <div class="info flex flex-col gap-1">
+                    <a href="#">BLACK LACE HEELS</a>
+                    <div class="price">
+                      <span>180.00$</span>
+                      <span class="line-through opacity-50">220.00$</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- 6 -->
+                <div class="box flex items-center gap-4">
+                  <div class="image">
+                    <img src="./images/r6.jpg.webp" alt="" />
+                  </div>
+                  <div class="info flex flex-col gap-1">
+                    <a href="#">BLACK LACE HEELS</a>
+                    <div class="price">
+                      <span>180.00$</span>
+                      <span class="line-through opacity-50">220.00$</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- 7 -->
+                <div class="box flex items-center gap-4">
+                  <div class="image">
+                    <img src="./images/r7.jpg.webp" alt="" />
+                  </div>
+                  <div class="info flex flex-col gap-1">
+                    <a href="#">BLACK LACE HEELS</a>
+                    <div class="price">
+                      <span>180.00$</span>
+                      <span class="line-through opacity-50">220.00$</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- 8 -->
+                <div class="box flex items-center gap-4">
+                  <div class="image">
+                    <img src="./images/r9.jpg.webp" alt="" />
+                  </div>
+                  <div class="info flex flex-col gap-1">
+                    <a href="#">BLACK LACE HEELS</a>
+                    <div class="price">
+                      <span>180.00$</span>
+                      <span class="line-through opacity-50">220.00$</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- 9 -->
+                <div class="box flex items-center gap-4">
+                  <div class="image">
+                    <img src="./images/r10.jpg.webp" alt="" />
+                  </div>
+                  <div class="info flex flex-col gap-1">
+                    <a href="#">BLACK LACE HEELS</a>
+                    <div class="price">
+                      <span>180.00$</span>
+                      <span class="line-through opacity-50">220.00$</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end left  -->
+              <!-- start right -->
+              <div class="right w-1/4 max-md:w-full">
+                <div class="image">
+                  <a href="#"><img src="./images/c5.jpg.webp" alt="" /></a>
+                </div>
+              </div>
+              <!-- end right -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end last deals  -->
+    </main>
+    <footer class="pt-28 pb-28">
+      <div class="my-container">
+        <div class="footer flex gap-8 max-xl:flex-wrap max-md:flex-col">
+          <div class="box flex-1">
+            <h5 class="text-white text-xl font-bold mb-8 capitalize">
+              about us
+            </h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore dolore magna aliqua.
+            </p>
+          </div>
+          <div class="box flex-1">
+            <h5 class="text-white text-xl font-bold mb-10 capitalize">
+              Newsletter
+            </h5>
+            <p class="mb-6">Stay update with our latest</p>
+            <div class="input relative w-fit h-fit overflow-hidden">
+              <input
+                type="email"
+                placeholder="enter email"
+                class="block py-2 pl-4 pr-10 outline-none border-none"
+              />
+              <a href="#">
+                <i
+                  class="fa-solid fa-arrow-right block absolute top-1/2 right-0 -translate-y-1/2 p-3 text-white"
+                ></i>
+              </a>
+            </div>
+          </div>
+          <div class="box flex-1">
+            <h5 class="text-white text-xl font-bold mb-8 capitalize">
+              Instagram Feed
+            </h5>
+            <div class="insta-gallery grid gap-2">
+              <div class="image">
+                <img src="./images/i1.jpg.webp" alt="" class="md:w-full" />
+              </div>
+              <div class="image">
+                <img src="./images/i2.jpg.webp" alt="" class="md:w-full" />
+              </div>
+              <div class="image">
+                <img src="./images/i3.jpg.webp" alt="" class="md:w-full" />
+              </div>
+              <div class="image">
+                <img src="./images/i4.jpg.webp" alt="" class="md:w-full" />
+              </div>
+              <div class="image">
+                <img src="./images/i5.jpg.webp" alt="" class="md:w-full" />
+              </div>
+              <div class="image">
+                <img src="./images/i6.jpg.webp" alt="" class="md:w-full" />
+              </div>
+              <div class="image">
+                <img src="./images/i7.jpg.webp" alt="" class="md:w-full" />
+              </div>
+              <div class="image">
+                <img src="./images/i8.jpg.webp" alt="" class="md:w-full" />
+              </div>
+            </div>
+          </div>
+          <div class="box flex-1">
+            <h5 class="text-white text-xl font-bold mb-8 capitalize">
+              follow us
+            </h5>
+            <p class="mb-6">Let us be social</p>
+            <div class="social flex gap-6">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+              <a href="#"><i class="fa-brands fa-behance"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

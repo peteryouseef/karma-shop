@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="stylesheet" href="./css/input.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    <title>shop category</title>
+  </head>
+  <body>
+    <!-- start header -->
+    <header class="sticky top-0 z-50 bg-white">
+      <div class="header h-20 mx-auto">
+        <div class=" flex justify-between items-center p-4 mx-auto w-9/12 max-xl:w-11/12 h-20 relative">
+          <div class="logo">
+            <a href="#"><img src="./images/logo.png.webp" alt="" class="w-full"/></a>
+          </div>
+            <div class="links">
+            <i class="fa-solid fa-bars 
+                max-md:text-3xl max-md:cursor-pointer"></i>
+            <!-- start menu  -->
+            <div class="menu
+                max-md:invisible max-md:opacity-0 duration-500">
+              <!-- start main ul -->
+              <ul class="main-ul flex md:items-center 
+                max-md:flex-col max-md:absolute max-md:left-0 max-md:mt-6">
+                <li class="p-5 block max-md:p-3">
+                  <a href="index.html" class="block duration-300">Home</a>
+                </li>
+                <li class="p-5 block down relative max-md:p-3">
+                  <a href="#" class="block relative duration-300 active">Shop</a>
+                <!--start shop menu -->
+                  <div class="other absolute max-md:left-16 max-md:top-0 max-md:mt-0">
+                    <ul class=" mt-3 bg-white  w-56 max-md:p-0 max-md:ml-3 ">
+                      <li>
+                        <a href="shop-category.html" class="block p-3 pr-10 border-b duration-500  ">Shop Category</a>
+                      </li>
+                      <li>
+                        <a href="product-details.html" class="block p-3 pr-10 border-b duration-500 ">product details</a>
+                      </li>
+                      <li>
+                        <a href="product-checkout.html" class="block p-3 pr-10 border-b duration-500 ">product checkout</a>
+                      </li>
+                      <li>
+                        <a href="shopping-cart.html" class="block p-3 pr-10 border-b duration-500 active">shopping chart</a>
+                      </li>
+                      <li>
+                        <a href="confirmation.html" class="block p-3 pr-10 duration-500">confirmation</a>
+                      </li>
+                    </ul>
+                  </div>
+                <!-- end shop menu -->
+                </li>
+                <li class="p-5 block down relative max-md:p-3">
+                  <a href="#" class="block relative duration-300">Blog</a>
+                <!-- start blog menu -->
+                  <div class="other absolute max-md:left-16 max-md:top-0 max-md:mt-0">
+                    <ul class="mt-3 bg-white  w-52 max-md:p-0 max-md:ml-3">
+                      <li>
+                        <a href="blog.html" class="block p-3 pr-10 border-b duration-500">blog</a>
+                      </li>
+                      <li>
+                        <a href="#" class="block p-3 pr-10 duration-500">blog details</a>
+                      </li>
+                    </ul>
+                  </div>
+                <!-- end blog menu -->
+                </li>
+                <li class="p-5 block down relative max-md:p-3">
+                  <a href="#" class="block relative duration-300">Pages</a>
+                  <!--start pages menu -->
+                  <div class="other absolute max-md:left-16 max-md:top-0 max-md:mt-0">
+                    <ul class="mt-3 bg-white w-52 max-md:p-0 max-md:ml-3">
+                      <li>
+                        <a href="login-page.html" class="block p-3 pr-10 border-b duration-500">log in</a>
+                      </li>
+                      <li>
+                        <a href="tracking-page.html" class="block p-3 pr-10 duration-500">tracking</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- end pages menu -->
+                </li>
+                <li class="p-5 block max-md:p-3">
+                  <a href="contact-page.html" class="block duration-300">Contact</a>
+                </li>
+                <ul class="flex other-links max-md:flex-col">
+                  <li class="p-3 block">
+                    <a href="#" class="block duration-300"><i class="fa-solid fa-bag-shopping"></i></a>
+                  </li>
+                  <li class="p-3 block relative">
+                    <i class="fa-solid fa-magnifying-glass cursor-pointer"></i>
+                  </li>
+                </ul>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+    <main>
+      <!-- start intro section  -->
+      <section class="shop-category-intro pt-14 ">
+        <div class="shop-intro">
+          <div class="my-container w-full flex justify-end">
+            <div class="cont w-1/2 max-lg:w-full  py-32">
+              <h1 class="capitalize text-white text-5xl font-bold text-center max-lg:text-left">Shopping Cart</h1>
+              <div class="links flex gap-4 pt-4 justify-center max-lg:justify-start">
+                <div class="text-white capitalize"><a href="index.html">home</a></div>
+                <div class="text-white capitalize"><i class="fa-solid fa-arrow-right"></i></div>
+                <div class="text-white capitalize"><a href="#">Cart</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end intro section  -->
+      <!-- start shopping cart page  -->
+      <section class="shopping-cart py-12">
+        <div class="my-container">
+          <div class="the-cart">
+            <table class="w-full p-4">
+              <thead class=" border-b">
+                <tr class="">
+                  <th scope="col" class="py-3 text-left">Product</th>
+                  <th scope="col" class="py-3 text-left">Price</th>
+                  <th scope="col" class="py-3 text-left">Quantity</th>
+                  <th scope="col" class="py-3 text-left">Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class=" border-b">
+                  <td class="">
+                    <div class="flex gap-4 items-center">
+                      <img src="./images/cart.jpg.webp" class="p-4">
+                      <p>Minimalistic shop for multipurpose use</p>
+                    </div>
+                  </td>
+                  <td>
+                    $360.00
+                  </td>
+                  <td>
+                    <input type="number" class="outline-none border w-16">
+                  </td>
+                  <td>
+                    $720.00
+                  </td>
+                </tr>
+                <tr class=" border-b">
+                  <td class="">
+                    <div class="flex gap-4 items-center">
+                      <img src="./images/cart.jpg.webp" class="p-4">
+                      <p>Minimalistic shop for multipurpose use</p>
+                    </div>
+                  </td>
+                  <td>
+                    $360.00
+                  </td>
+                  <td>
+                    <input type="number" class="outline-none border w-16">
+                  </td>
+                  <td>
+                    $720.00
+                  </td>
+                </tr>
+                <!--  -->
+                <tr class=" border-b">
+                  <td class="">
+                    <div class="flex gap-4 items-center">
+                      <img src="./images/cart.jpg.webp" class="p-4">
+                      <p>Minimalistic shop for multipurpose use</p>
+                    </div>
+                  </td>
+                  <td>
+                    $360.00
+                  </td>
+                  <td>
+                    <input type="number" class="outline-none border w-16">
+                  </td>
+                  <td>
+                    $720.00
+                  </td>
+                </tr>
+                <!--  -->
+              </tbody>
+            </table>
+            <div class="links flex justify-between items-center px-4 py-6 border-b">
+              <div class="">
+                <a href="#" class="py-2 px-8 rounded-sm ">UPDATE CART</a>
+              </div>
+              <div class="flex items-center">
+                <input type="text" placeholder="coupon code" class="outline-none border py-2 pl-4 ">
+                <a href="#" class="primary text-white py-2 px-10">apply</a>
+                <a href="#" class="py-2 px-8  rounded-sm ">CLOSE COUPON</a>
+              </div>
+            </div>
+            <div class="links flex justify-end gap-40 items-center px-4 py-6 border-b">
+              <div class="">
+                Subtotal
+              </div>
+              <div class="">
+                $2160.00
+              </div>
+            </div>
+            <div class="table-left flex items-end flex-col py-4">
+              <h3 class="text-lg font-semibold mb-4">shaping</h3>
+              <form action="#">
+                <div class="flex justify-end gap-2">
+                  <label for="1" class="cursor-pointer">Flat Rate: $5.00</label>
+                  <input type="radio" id="1" name="check" class="cursor-pointer appearance-none w-5 h-5 border rounded-full mb-4 duration-300">
+                </div>
+                <div class="flex justify-end gap-2">
+                  <label for="2" class="cursor-pointer">Free Shipping</label>
+                  <input type="radio" id="2" name="check" class="cursor-pointer appearance-none w-5 h-5 border rounded-full mb-4 duration-300">
+                </div>
+                <div class="flex justify-end gap-2">
+                  <label for="3" class="cursor-pointer">Flat Rate: $10.00</label>
+                  <input type="radio" id="3" name="check" class="cursor-pointer appearance-none w-5 h-5 border rounded-full mb-4 duration-300">
+                </div>
+                <div class="flex justify-end gap-2">
+                  <label for="4" class="cursor-pointer">Local Delivery: $2.00</label>
+                  <input type="radio" id="4" name="check" class="cursor-pointer appearance-none w-5 h-5 border rounded-full mb-4 duration-300">
+                </div>
+                <div class="flex gap-2 justify-end">
+                  <h3 class="textlg font-semibold">Calculate Shipping </h3>
+                  <i class="fa-solid fa-sort-down"></i>
+                </div>
+                <div class=" mt-6">
+                  <select name="" id="" class="py-2 px-4 pr-28  w-full border">
+                    <optgroup label="egypt">
+                      <option value="">egypt</option>
+                      <option value="">egypt</option>
+                      <option value="">egypt</option>
+                    </optgroup>
+                  </select>
+                </div>
+                <div class=" mt-6">
+                  <select name="" id="" class="py-2 px-4 pr-28  w-full border">
+                    <optgroup label="egypt">
+                      <option value="">egypt</option>
+                      <option value="">egypt</option>
+                      <option value="">egypt</option>
+                    </optgroup>
+                  </select>
+                </div>
+                <div class="post mt-6 pb-6">
+                  <input type="text" placeholder="postcode / zip" class="w-full py-2 pr-28 px-4 border outline-none">
+                </div>
+                <div class="pt-6 flex items-center py-10">
+                  <a href="#" class="def py-2 px-16">	CONTINUE SHOPPING</a>
+                  <a href="#" class="primary py-2 px-16">PROCEED TO CHECKOUT</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end shopping cart page  -->
+    </main>
+    <footer class="pt-28 pb-28">
+      <div class="my-container ">
+        <div class="footer flex gap-8 max-xl:flex-wrap max-md:flex-col">
+          <div class="box flex-1">
+            <h5 class="text-white text-xl font-bold mb-8 capitalize">about us</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore dolore magna aliqua.
+            </p>
+          </div>
+          <div class="box flex-1">
+            <h5 class="text-white text-xl font-bold mb-10 capitalize">Newsletter</h5>
+            <p class="mb-6">Stay update with our latest</p>
+            <div class="input relative w-fit h-fit overflow-hidden">
+              <input type="email" placeholder="enter email" class="block py-2 pl-4 pr-10 outline-none border-none ">
+              <a href="#"><i class="fa-solid fa-arrow-right block absolute top-1/2 right-0 -translate-y-1/2 p-3 text-white"></i></a>
+            </div>
+          </div>
+          <div class="box flex-1">
+            <h5 class="text-white text-xl font-bold mb-8 capitalize">Instagram Feed</h5>
+            <div class="insta-gallery grid gap-2">
+              <div class="image">
+                <img src="./images/i1.jpg.webp" alt="" class="md:w-full">
+              </div>
+              <div class="image">
+                <img src="./images/i2.jpg.webp" alt="" class="md:w-full">
+              </div>
+              <div class="image">
+                <img src="./images/i3.jpg.webp" alt="" class="md:w-full">
+              </div>
+              <div class="image">
+                <img src="./images/i4.jpg.webp" alt="" class="md:w-full">
+              </div>
+              <div class="image">
+                <img src="./images/i5.jpg.webp" alt="" class="md:w-full">
+              </div>
+              <div class="image">
+                <img src="./images/i6.jpg.webp" alt="" class="md:w-full">
+              </div>
+              <div class="image">
+                <img src="./images/i7.jpg.webp" alt="" class="md:w-full">
+              </div>
+              <div class="image">
+                <img src="./images/i8.jpg.webp" alt="" class="md:w-full">
+              </div>
+            </div>
+          </div>
+          <div class="box flex-1">
+            <h5 class="text-white text-xl font-bold mb-8 capitalize">follow us</h5>
+            <p class="mb-6">Let us be social</p>
+            <div class="social flex gap-6">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+              <a href="#"><i class="fa-brands fa-behance"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

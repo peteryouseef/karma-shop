@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="stylesheet" href="./css/input.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    <title>blog page</title>
+  </head>
+  <body>
+    <!-- start header -->
+    <header class="sticky top-0 z-50 bg-white">
+      <div class="header h-20 mx-auto">
+        <div class=" flex justify-between items-center p-4 mx-auto w-9/12 max-xl:w-11/12 h-20 relative">
+          <div class="logo">
+            <a href="#"><img src="./images/logo.png.webp" alt="" class="w-full"/></a>
+          </div>
+            <div class="links">
+            <i class="fa-solid fa-bars 
+                max-md:text-3xl max-md:cursor-pointer"></i>
+            <!-- start menu  -->
+            <div class="menu
+                max-md:invisible max-md:opacity-0 duration-500">
+              <!-- start main ul -->
+              <ul class="main-ul flex md:items-center 
+                max-md:flex-col max-md:absolute max-md:left-0 max-md:mt-6">
+                <li class="p-5 block max-md:p-3">
+                  <a href="index.html" class="block duration-300">Home</a>
+                </li>
+                <li class="p-5 block down relative max-md:p-3">
+                  <a href="#" class="block relative duration-300 ">Shop</a>
+                <!--start shop menu -->
+                  <div class="other absolute max-md:left-16 max-md:top-0 max-md:mt-0">
+                    <ul class=" mt-3 bg-white  w-56 max-md:p-0 max-md:ml-3 ">
+                      <li>
+                        <a href="shop-category.html" class="block p-3 pr-10 border-b duration-500  ">Shop Category</a>
+                      </li>
+                      <li>
+                        <a href="product-details.html" class="block p-3 pr-10 border-b duration-500 ">product details</a>
+                      </li>
+                      <li>
+                        <a href="product-checkout.html" class="block p-3 pr-10 border-b duration-500 ">product checkout</a>
+                      </li>
+                      <li>
+                        <a href="shopping-cart.html" class="block p-3 pr-10 border-b duration-500 ">shopping chart</a>
+                      </li>
+                      <li>
+                        <a href="confirmation.html" class="block p-3 pr-10 duration-500 ">confirmation</a>
+                      </li>
+                    </ul>
+                  </div>
+                <!-- end shop menu -->
+                </li>
+                <li class="p-5 block down relative max-md:p-3">
+                  <a href="#" class="block relative duration-300 ">Blog</a>
+                <!-- start blog menu -->
+                  <div class="other absolute max-md:left-16 max-md:top-0 max-md:mt-0">
+                    <ul class="mt-3 bg-white  w-52 max-md:p-0 max-md:ml-3">
+                      <li>
+                        <a href="blog.html" class="block p-3 pr-10 border-b duration-500">blog</a>
+                      </li>
+                      <li>
+                        <a href="blog-details.html" class="block p-3 pr-10 duration-500 ">blog details</a>
+                      </li>
+                    </ul>
+                  </div>
+                <!-- end blog menu -->
+                </li>
+                <li class="p-5 block down relative max-md:p-3">
+                  <a href="#" class="block relative duration-300 ">Pages</a>
+                  <!--start pages menu -->
+                  <div class="other absolute max-md:left-16 max-md:top-0 max-md:mt-0">
+                    <ul class="mt-3 bg-white w-52 max-md:p-0 max-md:ml-3">
+                      <li>
+                        <a href="login-page.html" class="block p-3 pr-10 border-b duration-500 ">log in</a>
+                      </li>
+                      <li>
+                        <a href="tracking-page.html" class="block p-3 pr-10 duration-500 ">tracking</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- end pages menu -->
+                </li>
+                <li class="p-5 block max-md:p-3">
+                  <a href="contact-page.html" class="block duration-300 active">Contact</a>
+                </li>
+                <ul class="flex other-links max-md:flex-col">
+                  <li class="p-3 block">
+                    <a href="#" class="block duration-300"><i class="fa-solid fa-bag-shopping"></i></a>
+                  </li>
+                  <li class="p-3 block relative">
+                    <i class="fa-solid fa-magnifying-glass cursor-pointer"></i>
+                  </li>
+                </ul>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+    <main>
+      <!-- start intro section  -->
+      <section class="shop-category-intro pt-14 ">
+        <div class="shop-intro">
+          <div class="my-container w-full flex justify-end">
+            <div class="cont w-1/2 max-lg:w-full  py-32">
+              <h1 class="capitalize text-white text-5xl font-bold text-center max-lg:text-left">Contact Us</h1>
+              <div class="links flex gap-4 pt-4 justify-center max-lg:justify-start">
+                <div class="text-white capitalize"><a href="index.html">home</a></div>
+                <div class="text-white capitalize"><i class="fa-solid fa-arrow-right"></i></div>
+                <div class="text-white capitalize"><a href="#">Contact Us</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end intro section  -->
+      <!-- start contact us page  -->
+      <div class="contact-page">
+        <div class="my-container">
+          <div class="contact py-28">
+            <!-- google map -->
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" 
+                marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=egypt&amp;t=&amp;z=10&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                </iframe>
+              </div>
+              <style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas 
+                {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}
+              </style>
+            </div>
+            <!-- google map -->
+            <div class="contact-us flex py-16 gap-6 max-lg:flex-col">
+              <!-- info box -->
+              <div class="box flex-1">
+                <div class="row flex items-center gap-4 mb-4">
+                  <div class="icon"><i class="fa-solid fa-house-chimney text-2xl"></i></div>
+                  <div class="">
+                    <h2 class="text-lg font-semibold ">California, United States</h2>
+                    <p class="text-sm">Santa monica bullevard</p>
+                  </div>
+                </div>
+                <div class="row flex items-center gap-4 mb-4">
+                  <div class="icon"><i class="fa-solid fa-phone text-2xl"></i></div>
+                  <div class="">
+                    <h2 class="text-lg font-semibold ">00 (440) 9865 562</h2>
+                    <p class="text-sm">Mon to Fri 9am to 6 pm</p>
+                  </div>
+                </div>
+                <div class="row flex items-center gap-4 mb-4">
+                  <div class="icon"><i class="fa-regular fa-envelope text-2xl"></i></div>
+                  <div class="">
+                    <h2 class="text-lg font-semibold ">support@colorlib.com</h2>
+                    <p class="text-sm">Send us your query anytime!</p>
+                  </div>
+                </div>
+              </div>
+              <!-- inputs box -->
+              <div class="box flex-1">
+                <input type="text" placeholder="Enter your name" class="border outline-none w-full block py-2 px-4 mb-4">
+                <input type="email" placeholder="Enter email address" class="border outline-none w-full block py-2 px-4 mb-4">
+                <input type="text" placeholder="Enter subject" class="border outline-none w-full block py-2 px-4 mb-4">
+              </div>
+              <!-- text area  -->
+              <div class="box flex-1">
+                <textarea placeholder="enter message" class="border outline-none w-full block resize-none h-40 p-4"></textarea>
+                <div class="flex justify-end mt-4">
+                <a href="#" class="primary block py-3 px-6 text-white">SEND MESSAGE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end contact us page  -->
+    </main>
+    <footer class="pt-28 pb-28">
+      <div class="my-container ">
+        <div class="footer flex gap-8 max-xl:flex-wrap max-md:flex-col">
+          <div class="box flex-1">
+            <h5 class="text-white text-xl font-bold mb-8 capitalize">about us</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore dolore magna aliqua.
+            </p>
+          </div>
+          <div class="box flex-1">
+            <h5 class="text-white text-xl font-bold mb-10 capitalize">Newsletter</h5>
+            <p class="mb-6">Stay update with our latest</p>
+            <div class="input relative w-fit h-fit overflow-hidden">
+              <input type="email" placeholder="enter email" class="block py-2 pl-4 pr-10 outline-none border-none ">
+              <a href="#"><i class="fa-solid fa-arrow-right block absolute top-1/2 right-0 -translate-y-1/2 p-3 text-white"></i></a>
+            </div>
+          </div>
+          <div class="box flex-1">
+            <h5 class="text-white text-xl font-bold mb-8 capitalize">Instagram Feed</h5>
+            <div class="insta-gallery grid gap-2">
+              <div class="image">
+                <img src="./images/i1.jpg.webp" alt="" class="md:w-full">
+              </div>
+              <div class="image">
+                <img src="./images/i2.jpg.webp" alt="" class="md:w-full">
+              </div>
+              <div class="image">
+                <img src="./images/i3.jpg.webp" alt="" class="md:w-full">
+              </div>
+              <div class="image">
+                <img src="./images/i4.jpg.webp" alt="" class="md:w-full">
+              </div>
+              <div class="image">
+                <img src="./images/i5.jpg.webp" alt="" class="md:w-full">
+              </div>
+              <div class="image">
+                <img src="./images/i6.jpg.webp" alt="" class="md:w-full">
+              </div>
+              <div class="image">
+                <img src="./images/i7.jpg.webp" alt="" class="md:w-full">
+              </div>
+              <div class="image">
+                <img src="./images/i8.jpg.webp" alt="" class="md:w-full">
+              </div>
+            </div>
+          </div>
+          <div class="box flex-1">
+            <h5 class="text-white text-xl font-bold mb-8 capitalize">follow us</h5>
+            <p class="mb-6">Let us be social</p>
+            <div class="social flex gap-6">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+              <a href="#"><i class="fa-brands fa-behance"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

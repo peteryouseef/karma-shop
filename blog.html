@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="stylesheet" href="./css/input.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    <title>blog page</title>
+  </head>
+  <body>
+    <!-- start header -->
+    <header class="sticky top-0 z-50 bg-white">
+      <div class="header h-20 mx-auto">
+        <div class=" flex justify-between items-center p-4 mx-auto w-9/12 max-xl:w-11/12 h-20 relative">
+          <div class="logo">
+            <a href="#"><img src="./images/logo.png.webp" alt="" class="w-full"/></a>
+          </div>
+            <div class="links">
+            <i class="fa-solid fa-bars 
+                max-md:text-3xl max-md:cursor-pointer"></i>
+            <!-- start menu  -->
+            <div class="menu
+                max-md:invisible max-md:opacity-0 duration-500">
+              <!-- start main ul -->
+              <ul class="main-ul flex md:items-center 
+                max-md:flex-col max-md:absolute max-md:left-0 max-md:mt-6">
+                <li class="p-5 block max-md:p-3">
+                  <a href="index.html" class="block duration-300">Home</a>
+                </li>
+                <li class="p-5 block down relative max-md:p-3">
+                  <a href="#" class="block relative duration-300 ">Shop</a>
+                <!--start shop menu -->
+                  <div class="other absolute max-md:left-16 max-md:top-0 max-md:mt-0">
+                    <ul class=" mt-3 bg-white  w-56 max-md:p-0 max-md:ml-3 ">
+                      <li>
+                        <a href="shop-category.html" class="block p-3 pr-10 border-b duration-500  ">Shop Category</a>
+                      </li>
+                      <li>
+                        <a href="product-details.html" class="block p-3 pr-10 border-b duration-500 ">product details</a>
+                      </li>
+                      <li>
+                        <a href="product-checkout.html" class="block p-3 pr-10 border-b duration-500 ">product checkout</a>
+                      </li>
+                      <li>
+                        <a href="shopping-cart.html" class="block p-3 pr-10 border-b duration-500 ">shopping chart</a>
+                      </li>
+                      <li>
+                        <a href="confirmation.html" class="block p-3 pr-10 duration-500 ">confirmation</a>
+                      </li>
+                    </ul>
+                  </div>
+                <!-- end shop menu -->
+                </li>
+                <li class="p-5 block down relative max-md:p-3">
+                  <a href="#" class="block relative duration-300 active">Blog</a>
+                <!-- start blog menu -->
+                  <div class="other absolute max-md:left-16 max-md:top-0 max-md:mt-0">
+                    <ul class="mt-3 bg-white  w-52 max-md:p-0 max-md:ml-3">
+                      <li>
+                        <a href="blog.html" class="block p-3 pr-10 border-b duration-500 active">blog</a>
+                      </li>
+                      <li>
+                        <a href="blog-details.html" class="block p-3 pr-10 duration-500">blog details</a>
+                      </li>
+                    </ul>
+                  </div>
+                <!-- end blog menu -->
+                </li>
+                <li class="p-5 block down relative max-md:p-3">
+                  <a href="#" class="block relative duration-300">Pages</a>
+                  <!--start pages menu -->
+                  <div class="other absolute max-md:left-16 max-md:top-0 max-md:mt-0">
+                    <ul class="mt-3 bg-white w-52 max-md:p-0 max-md:ml-3">
+                      <li>
+                        <a href="login-page.html" class="block p-3 pr-10 border-b duration-500">log in</a>
+                      </li>
+                      <li>
+                        <a href="tracking-page.html" class="block p-3 pr-10 duration-500">tracking</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- end pages menu -->
+                </li>
+                <li class="p-5 block max-md:p-3">
+                  <a href="contact-page.html" class="block duration-300">Contact</a>
+                </li>
+                <ul class="flex other-links max-md:flex-col">
+                  <li class="p-3 block">
+                    <a href="#" class="block duration-300"><i class="fa-solid fa-bag-shopping"></i></a>
+                  </li>
+                  <li class="p-3 block relative">
+                    <i class="fa-solid fa-magnifying-glass cursor-pointer"></i>
+                  </li>
+                </ul>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+    <main>
+      <!-- start intro section  -->
+      <section class="shop-category-intro pt-14 ">
+        <div class="shop-intro">
+          <div class="my-container w-full flex justify-end">
+            <div class="cont w-1/2 max-lg:w-full  py-32">
+              <h1 class="capitalize text-white text-5xl font-bold text-center max-lg:text-left">blog page</h1>
+              <div class="links flex gap-4 pt-4 justify-center max-lg:justify-start">
+                <div class="text-white capitalize"><a href="index.html">home</a></div>
+                <div class="text-white capitalize"><i class="fa-solid fa-arrow-right"></i></div>
+                <div class="text-white capitalize"><a href="#">blog</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end intro section  -->
+      <!-- start blog gallery -->
+      <section class="blog-gallery py-28 max-lg:py-12">
+        <div class="my-container">
+          <div class="gallery flex justify-between max-lg:flex-col gap-6">
+            <div class="box relative">
+              <div class="overlay absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2  w-5/6 h-5/6">
+                <a href="#" class="block w-3/4 text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ">
+                  <h1 class="text-white text-2xl border-b-2 px-6 pb-2 mb-2">social life</h1>
+                  <p class="text-white text-sm ">
+                    enjoy your social life together
+                  </p>
+                </a>
+              </div>
+              <img src="./images/cat-post-1.jpg.webp" class="w-full" alt="">
+            </div>
+            <div class="box relative">
+              <div class="overlay absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2  w-5/6 h-5/6">
+                <a href="#" class="block w-3/4 text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ">
+                  <h1 class="text-white text-2xl border-b-2 px-6 pb-2 mb-2">politics</h1>
+                  <p class="text-white text-sm ">
+                    be a part of politics
+                  </p>
+                </a>
+              </div>
+              <img src="./images/cat-post-2.jpg.webp" class="w-full" alt="">
+            </div>
+            <div class="box relative">
+              <div class="overlay absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2  w-5/6 h-5/6">
+                <a href="#" class="block w-3/4 text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ">
+                  <h1 class="text-white text-2xl border-b-2 px-6 pb-2 mb-2">food</h1>
+                  <p class="text-white text-sm ">
+                    let the food be finished
+                  </p>
+                </a>
+              </div>
+              <img src="./images/cat-post-3.jpg.webp" class="w-full" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end blog gallery -->
+      <!-- start blog page  -->
+      <section class="blog-page">
+        <div class="my-container">
+          <div class="blog flex gap-6 max-lg:flex-col ">
+            <!-- start main  -->
+            <div class="main-blog w-2/3 max-lg:w-full">
+              <!-- 1 -->
+              <div class="box flex mb-5 max-lg:flex-col">
+                <div class="links flex flex-col w-1/4 max-lg:w-full px-4 text-right mt-7">
+                  <a href="#" class="text-sm mb-4">
+                    Food, <span class="orange">Technology</span>, Politics, Lifestyle
+                  </a>
+                  <a href="#" class="mb-3 block text-sm">
+                    <span class="mr-2 duration-300">Mark wiens</span>
+                    <i class="fa-regular fa-user fa-fw"></i>
+                  </a>
+                  <a href="#" class="mb-3 block text-sm">
+                    <span class="mr-2 duration-300">12 Dec, 2018</span>
+                    <i class="fa-solid fa-calendar-days fa-fw"></i>
+                  </a>
+                  <a href="#" class="mb-3 block text-sm">
+                    <span class="mr-2 duration-300">1.2M Views</span>
+                    <i class="fa-solid fa-eye fa-fw"></i>
+                  </a>
+                  <a href="#" class="mb-3 block text-sm">
+                    <span class="mr-2 duration-300">06 Comments</span>
+                    <i class="fa-regular fa-comment fa-fw"></i>
+                  </a>
+                </div>
+                <div class="cont w-3/4 max-lg:w-full px-4">
+                  <div class="image">
+                    <img src="./images/m-blog-1.jpg.webp" class="max-w-full">
+                  </div>
+                  <div class="">
+                    <a href="#" class="label duration-300 text-2xl -tracking-tighter font-extrabold my-3 block"><h1>Astronomy Binoculars A Great Alternative</h1></a>
+                    <p class="leading-6 text-sm">
+                      MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to 
+                      spend money on boot camp when you can get the MCSE study materials yourself at a fraction.
+                    </p>
+                  </div>
+                  <div class="my-4">
+                    <a href="#" class="border py-2 px-6 block w-fit">view more</a>
+                  </div>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="box flex mb-5 max-lg:flex-col">
+                <div class="links flex flex-col w-1/4 max-lg:w-full px-4 text-right mt-7">
+                  <a href="#" class="text-sm mb-4">
+                    Food, <span class="orange">Technology</span>, Politics, Lifestyle
+                  </a>
+                  <a href="#" class="mb-3 block text-sm">
+                    <span class="mr-2 duration-300">Mark wiens</span>
+                    <i class="fa-regular fa-user fa-fw"></i>
+                  </a>
+                  <a href="#" class="mb-3 block text-sm">
+                    <span class="mr-2 duration-300">12 Dec, 2018</span>
+                    <i class="fa-solid fa-calendar-days fa-fw"></i>
+                  </a>
+                  <a href="#" class="mb-3 block text-sm">
+                    <span class="mr-2 duration-300">1.2M Views</span>
+                    <i class="fa-solid fa-eye fa-fw"></i>
+                  </a>
+                  <a href="#" class="mb-3 block text-sm">
+                    <span class="mr-2 duration-300">06 Comments</span>
+                    <i class="fa-regular fa-comment fa-fw"></i>
+                  </a>
+                </div>
+                <div class="cont w-3/4  max-lg:w-full px-4">
+                  <div class="image">
+                    <img src="./images/m-blog-2.jpg.webp" class="max-w-full">
+                  </div>
+                  <div class="">
+                    <a href="#" class="label duration-300 text-2xl -tracking-tighter font-extrabold my-3 block">
+                      <h1>The Basics Of Buying A Telescope</h1>
+                    </a>
+                    <p class="leading-6 text-sm">
+                      MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to 
+                      spend money on boot camp when you can get the MCSE study materials yourself at a fraction.
+                    </p>
+                  </div>
+                  <div class="my-4">
+                    <a href="#" class="border py-2 px-6 block w-fit">view more</a>
+                  </div>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="box flex mb-5 max-lg:flex-col">
+                <div class="links flex flex-col w-1/4 max-lg:w-full px-4 text-right mt-7">
+                  <a href="#" class="text-sm mb-4">
+                    Food, <span class="orange">Technology</span>, Politics, Lifestyle
+                  </a>
+                  <a href="#" class="mb-3 block text-sm">
+                    <span class="mr-2 duration-300">Mark wiens</span>
+                    <i class="fa-regular fa-user fa-fw"></i>
+                  </a>
+                  <a href="#" class="mb-3 block text-sm">
+                    <span class="mr-2 duration-300">12 Dec, 2018</span>
+                    <i class="fa-solid fa-calendar-days fa-fw"></i>
+                  </a>
+                  <a href="#" class="mb-3 block text-sm">
+                    <span class="mr-2 duration-300">1.2M Views</span>
+                    <i class="fa-solid fa-eye fa-fw"></i>
+                  </a>
+                  <a href="#" class="mb-3 block text-sm">
+                    <span class="mr-2 duration-300">06 Comments</span>
+                    <i class="fa-regular fa-comment fa-fw"></i>
+                  </a>
+                </div>
+                <div class="cont w-3/4 max-lg:w-full px-4">
+                  <div class="image">
+                    <img src="./images/m-blog-3.jpg.webp" class="max-w-full">
+                  </div>
+                  <div class="">
+                    <a href="#" class="label duration-300 text-2xl -tracking-tighter font-extrabold my-3 block">
+                      <h1>The Glossary Of Telescopes</h1>
+                    </a>
+                    <p class="leading-6 text-sm">
+                      MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to 
+                      spend money on boot camp when you can get the MCSE study materials yourself at a fraction.
+                    </p>
+                  </div>
+                  <div class="my-4">
+                    <a href="#" class="border py-2 px-6 block w-fit">view more</a>
+                  </div>
+                </div>
+              </div>
+              <!-- 4 -->
+              <div class="box flex mb-5 max-lg:flex-col">
+                <div class="links flex flex-col w-1/4 max-lg:w-full px-4 text-right mt-7">
+                  <a href="#" class="text-sm mb-4">
+                    Food, <span class="orange">Technology</span>, Politics, Lifestyle
+                  </a>
+                  <a href="#" class="mb-3 block text-sm">
+                    <span class="mr-2 duration-300">Mark wiens</span>
+                    <i class="fa-regular fa-user fa-fw"></i>
+                  </a>
+                  <a href="#" class="mb-3 block text-sm">
+                    <span class="mr-2 duration-300">12 Dec, 2018</span>
+                    <i class="fa-solid fa-calendar-days fa-fw"></i>
+                  </a>
+                  <a href="#" class="mb-3 block text-sm">
+                    <span class="mr-2 duration-300">1.2M Views</span>
+                    <i class="fa-solid fa-eye fa-fw"></i>
+                  </a>
+                  <a href="#" class="mb-3 block text-sm">
+                    <span class="mr-2 duration-300">06 Comments</span>
+                    <i class="fa-regular fa-comment fa-fw"></i>
+                  </a>
+                </div>
+                <div class="cont w-3/4 max-lg:w-full px-4">
+                  <div class="image">
+                    <img src="./images/m-blog-4.jpg.webp" class="max-w-full">
+                  </div>
+                  <div class="">
+                    <a href="#" class="label duration-300 text-2xl -tracking-tighter font-extrabold my-3 block">
+                      <h1>The Night Sky</h1>
+                    </a>
+                    <p class="leading-6 text-sm">
+                      MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to 
+                      spend money on boot camp when you can get the MCSE study materials yourself at a fraction.
+                    </p>
+                  </div>
+                  <div class="my-4">
+                    <a href="#" class="border py-2 px-6 block w-fit">view more</a>
+                  </div>
+                </div>
+              </div>
+              <!-- 5 -->
+              <div class="box flex mb-5 max-lg:flex-col">
+                <div class="links flex flex-col w-1/4 max-lg:w-full px-4 text-right mt-7">
+                  <a href="#" class="text-sm mb-4">
+                    Food, <span class="orange">Technology</span>, Politics, Lifestyle
+                  </a>
+                  <a href="#" class="mb-3 block text-sm">
+                    <span class="mr-2 duration-300">Mark wiens</span>
+                    <i class="fa-regular fa-user fa-fw"></i>
+                  </a>
+                  <a href="#" class="mb-3 block text-sm">
+                    <span class="mr-2 duration-300">12 Dec, 2018</span>
+                    <i class="fa-solid fa-calendar-days fa-fw"></i>
+                  </a>
+                  <a href="#" class="mb-3 block text-sm">
+                    <span class="mr-2 duration-300">1.2M Views</span>
+                    <i class="fa-solid fa-eye fa-fw"></i>
+                  </a>
+                  <a href="#" class="mb-3 block text-sm">
+                    <span class="mr-2 duration-300">06 Comments</span>
+                    <i class="fa-regular fa-comment fa-fw"></i>
+                  </a>
+                </div>
+                <div class="cont w-3/4 max-lg:w-full px-4">
+                  <div class="image">
+                    <img src="./images/m-blog-5.jpg.webp" class="max-w-full">
+                  </div>
+                  <div class="">
+                    <a href="#" class="label duration-300 text-2xl -tracking-tighter font-extrabold my-3 block">
+                      <h1>Telescopes 101</h1>
+                    </a>
+                    <p class="leading-6 text-sm">
+                      MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to 
+                      spend money on boot camp when you can get the MCSE study materials yourself at a fraction.
+                    </p>
+                  </div>
+                  <div class="my-4">
+                    <a href="#" class="border py-2 px-6 block w-fit">view more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="pages flex items-center justify-center my-10">
+                <ul class="flex gap-4 items-center">
+                  <li><a href="#" class="flex items-center justify-center duration-200 w-8 h-8"><i class="fa-solid fa-angle-left"></i></a></li>
+                  <li><a href="#" class="flex items-center justify-center duration-200 w-8 h-8">01</a></li>
+                  <li><a href="#" class="flex items-center justify-center duration-200 w-8 h-8">02</a></li>
+                  <li><a href="#" class="flex items-center justify-center duration-200 w-8 h-8">03</a></li>
+                  <li><a href="#" class="flex items-center justify-center duration-200 w-8 h-8">04</a></li>
+                  <li><a href="#" class="flex items-center justify-center duration-200 w-8 h-8">05</a></li>
+                  <li><a href="#" class="flex items-center justify-center duration-200 w-8 h-8"><i class="fa-solid fa-angle-right"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- end main -->
+            <!-- start side -->
+            <div class="side-blog w-1/3 h-fit p-6 max-lg:w-full">
+              <!-- input -->
+              <div class="search py-6 relative border-b">
+                <input type="search" placeholder="search post" class="outline-none border-none py-2 px-4 w-full block rounded-3xl">
+              </div>
+                <!-- input -->
+                <!-- user info -->
+                <div class="user-info py-10 border-b flex flex-col justify-center items-center text-center">
+                  <div class="image">
+                    <img src="./images/author.png.webp" alt="">
+                  </div>
+                  <div class="my-4">
+                    <h2 class="text-xl font-medium">Charlie Barber</h2>
+                    <p class="text-sm">Senior blog writer</p>
+                  </div>
+                  <div class="links py-4">
+                    <ul class="flex items-center gap-6">
+                      <li><a href="#" class="duration-300"><i class="fa-brands fa-facebook-f fa-fw"></i></a></li>
+                      <li><a href="#" class="duration-300"><i class="fa-brands fa-twitter fa-fw"></i></a></li>
+                      <li><a href="#" class="duration-300"><i class="fa-brands fa-github fa-fw"></i></a></li>
+                      <li><a href="#" class="duration-300"><i class="fa-brands fa-behance fa-fw"></i></a></li>
+                    </ul>
+                  </div>
+                  <div class="">
+                    <p class="">
+                      Boot camps have its supporters adit sdetractors. 
+                      Some people do not understand why you should have to spend 
+                      money on boot camp when you can get. Boot camps have itssuppor
+                      tars adits detractors.
+                    </p>
+                  </div>
+                </div>
+                <!-- user info -->
+                <!-- Popular Posts -->
+                <div class="popular-post border-b">
+                  <div class="label text-center py-6">
+                    <h2 class="text-xl font-medium text-white p-1">Popular Posts</h2>
+                  </div>
+                  <div class="posts">
+                    <div class="box flex items-center justify-between mb-6 gap-4">
+                      <div class="image">
+                        <img src="./images/post1.jpg.webp" alt="" class="w-full">
+                      </div>
+                      <div class="">
+                        <a href="#" class="block duration-300 mb-1">Space The Final Frontier</a>
+                        <p class="text-sm">02 Hours ago</p>
+                      </div>
+                    </div>
+                    <div class="box flex items-center justify-between mb-6 gap-4">
+                      <div class="image">
+                        <img src="./images/post3.jpg.webp" alt="" class="w-full">
+                      </div>
+                      <div class="">
+                        <a href="#" class="block duration-300 mb-1">Space The Final Frontier</a>
+                        <p class="text-sm">02 Hours ago</p>
+                      </div>
+                    </div>
+                    <div class="box flex items-center justify-between mb-6 gap-4">
+                      <div class="image">
+                        <img src="./images/post4.jpg.webp" alt="" class="w-full">
+                      </div>
+                      <div class="">
+                        <a href="#" class="block duration-300 mb-1">Space The Final Frontier</a>
+                        <p class="text-sm">02 Hours ago</p>
+                      </div>
+                    </div>
+                    <div class="box flex items-center justify-between mb-6 gap-4">
+                      <div class="image">
+                        <img src="./images/post2.jpg.webp" alt="" class="w-full">
+                      </div>
+                      <div class="">
+                        <a href="#" class="block duration-300 mb-1">Space The Final Frontier</a>
+                        <p class="text-sm">02 Hours ago</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Popular Posts -->
+                <!-- post categories -->
+                <div class="post-categories border-b pb-6">
+                  <div class="label text-center py-6">
+                    <h2 class="text-xl font-medium text-white p-1">Posts categories</h2>
+                  </div>
+                  <div class="">
+                    <!-- 1 -->
+                    <div class="line mb-2">
+                      <a href="#" class="flex duration-300 justify-between border-b-2 border-dotted py-2">
+                        <span>Technology</span>
+                        <span>37</span>
+                      </a>
+                    </div>
+                    <!-- 2 -->
+                    <div class="line mb-2">
+                      <a href="#" class=" flex duration-300 justify-between border-b-2 border-dotted py-2">
+                        <span>Lifestyle</span>
+                        <span>21</span>
+                      </a>
+                    </div>
+                    <!--3 -->
+                    <div class="line mb-2">
+                      <a href="#" class=" flex duration-300 justify-between border-b-2 border-dotted py-2">
+                        <span>Fashion</span>
+                        <span>55</span>
+                      </a>
+                    </div>
+                    <!-- 4 -->
+                    <div class="line mb-2">
+                      <a href="#" class=" flex duration-300 justify-between border-b-2 border-dotted py-2">
+                        <span>Art</span>
+                        <span>20</span>
+                      </a>
+                    </div>
+                    <!-- 5 -->
+                    <div class="line mb-2">
+                      <a href="#" class=" flex duration-300 justify-between border-b-2 border-dotted py-2">
+                        <span>food</span>
+                        <span>15</span>
+                      </a>
+                    </div>
+                    <!-- 6 -->
+                    <div class="line mb-2">
+                      <a href="#" class=" flex duration-300 justify-between border-b-2 border-dotted py-2">
+                        <span>Architecture</span>
+                        <span>30</span>
+                      </a>
+                    </div>
+                    <!-- 7 -->
+                    <div class="line mb-2">
+                      <a href="#" class=" flex duration-300 justify-between border-b-2 border-dotted py-2">
+                        <span>Adventure</span>
+                        <span>44</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- post categories -->
+                <!-- Newsletter -->
+                <div class="newsletter border-b pb-6">
+                  <div class="label text-center py-6">
+                    <h2 class="text-xl font-medium text-white p-1">Newsletter</h2>
+                  </div>
+                  <p class="text-center">
+                    Here, I focus on a range of items and features that we use in 
+                    life without giving them a second thought.
+                  </p>
+                  <div class="email flex gap-0 justify-center relative py-4">
+                    <input type="email" placeholder="enter email" class="outline-none w-full pl-12 py-2 ">
+                    <input type="submit" value="subscribe" class="cursor-pointer px-2">
+                  </div>
+                  <p class="text-sm text-center">You can unsubscribe at any time</p>
+                </div>
+                <!-- Newsletter -->
+                <!-- Tag Clouds -->
+                <div class="tag-clouds">
+                  <div class="label text-center py-6">
+                    <h2 class="text-xl font-medium text-white p-1">Tag Clouds</h2>
+                  </div>
+                  <div class="flex flex-wrap gap-2">
+                    <a href="#" class=" bg-white border text-xs p-2 duration-300 block w-fit">Technology</a>
+                    <a href="#" class=" bg-white border text-xs p-2 duration-300 block w-fit">Fashion</a>
+                    <a href="#" class=" bg-white border text-xs p-2 duration-300 block w-fit">Architecture</a>
+                    <a href="#" class=" bg-white border text-xs p-2 duration-300 block w-fit">Fashion</a>
+                    <a href="#" class=" bg-white border text-xs p-2 duration-300 block w-fit">food</a>
+                    <a href="#" class=" bg-white border text-xs p-2 duration-300 block w-fit">Technology</a>
+                    <a href="#" class=" bg-white border text-xs p-2 duration-300 block w-fit">Lifestyle</a>
+                    <a href="#" class=" bg-white border text-xs p-2 duration-300 block w-fit">Fashion</a>
+                    <a href="#" class=" bg-white border text-xs p-2 duration-300 block w-fit">Architecture</a>
+                    <a href="#" class=" bg-white border text-xs p-2 duration-300 block w-fit">Fashion</a>
+                    <a href="#" class=" bg-white border text-xs p-2 duration-300 block w-fit">food</a>
+                    <a href="#" class=" bg-white border text-xs p-2 duration-300 block w-fit">Technology</a>
+                  </div>
+                </div>
+                <!-- Tag Clouds -->
+            </div>
+            <!-- end side -->
+          </div>
+        </div>
+      </section>
+      <!-- end blog page  -->
+    </main>
+    <footer class="pt-28 pb-28">
+      <div class="my-container ">
+        <div class="footer flex gap-8 max-xl:flex-wrap max-md:flex-col">
+          <div class="box flex-1">
+            <h5 class="text-white text-xl font-bold mb-8 capitalize">about us</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore dolore magna aliqua.
+            </p>
+          </div>
+          <div class="box flex-1">
+            <h5 class="text-white text-xl font-bold mb-10 capitalize">Newsletter</h5>
+            <p class="mb-6">Stay update with our latest</p>
+            <div class="input relative w-fit h-fit overflow-hidden">
+              <input type="email" placeholder="enter email" class="block py-2 pl-4 pr-10 outline-none border-none ">
+              <a href="#"><i class="fa-solid fa-arrow-right block absolute top-1/2 right-0 -translate-y-1/2 p-3 text-white"></i></a>
+            </div>
+          </div>
+          <div class="box flex-1">
+            <h5 class="text-white text-xl font-bold mb-8 capitalize">Instagram Feed</h5>
+            <div class="insta-gallery grid gap-2">
+              <div class="image">
+                <img src="./images/i1.jpg.webp" alt="" class="md:w-full">
+              </div>
+              <div class="image">
+                <img src="./images/i2.jpg.webp" alt="" class="md:w-full">
+              </div>
+              <div class="image">
+                <img src="./images/i3.jpg.webp" alt="" class="md:w-full">
+              </div>
+              <div class="image">
+                <img src="./images/i4.jpg.webp" alt="" class="md:w-full">
+              </div>
+              <div class="image">
+                <img src="./images/i5.jpg.webp" alt="" class="md:w-full">
+              </div>
+              <div class="image">
+                <img src="./images/i6.jpg.webp" alt="" class="md:w-full">
+              </div>
+              <div class="image">
+                <img src="./images/i7.jpg.webp" alt="" class="md:w-full">
+              </div>
+              <div class="image">
+                <img src="./images/i8.jpg.webp" alt="" class="md:w-full">
+              </div>
+            </div>
+          </div>
+          <div class="box flex-1">
+            <h5 class="text-white text-xl font-bold mb-8 capitalize">follow us</h5>
+            <p class="mb-6">Let us be social</p>
+            <div class="social flex gap-6">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+              <a href="#"><i class="fa-brands fa-behance"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

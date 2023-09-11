@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="stylesheet" href="./css/input.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    <title>shop category</title>
+  </head>
+  <body>
+    <!-- start header -->
+    <header class="sticky top-0 z-50 bg-white">
+      <div class="header h-20 mx-auto">
+        <div class=" flex justify-between items-center p-4 mx-auto w-9/12 max-xl:w-11/12 h-20 relative">
+          <div class="logo">
+            <a href="#"><img src="./images/logo.png.webp" alt="" class="w-full"/></a>
+          </div>
+            <div class="links">
+            <i class="fa-solid fa-bars 
+                max-md:text-3xl max-md:cursor-pointer"></i>
+            <!-- start menu  -->
+            <div class="menu
+                max-md:invisible max-md:opacity-0 duration-500">
+              <!-- start main ul -->
+              <ul class="main-ul flex md:items-center 
+                max-md:flex-col max-md:absolute max-md:left-0 max-md:mt-6">
+                <li class="p-5 block max-md:p-3">
+                  <a href="index.html" class="block duration-300">Home</a>
+                </li>
+                <li class="p-5 block down relative max-md:p-3">
+                  <a href="#" class="block relative duration-300 active">Shop</a>
+                <!--start shop menu -->
+                  <div class="other absolute max-md:left-16 max-md:top-0 max-md:mt-0">
+                    <ul class=" mt-3 bg-white  w-56 max-md:p-0 max-md:ml-3 ">
+                      <li>
+                        <a href="shop-category.html" class="block p-3 pr-10 border-b duration-500 active ">Shop Category</a>
+                      </li>
+                      <li>
+                        <a href="product-details.html" class="block p-3 pr-10 border-b duration-500 ">product details</a>
+                      </li>
+                      <li>
+                        <a href="product-checkout.html" class="block p-3 pr-10 border-b duration-500">product checkout</a>
+                      </li>
+                      <li>
+                        <a href="shopping-cart.html" class="block p-3 pr-10 border-b duration-500">shopping chart</a>
+                      </li>
+                      <li>
+                        <a href="confirmation.html" class="block p-3 pr-10 duration-500">confirmation</a>
+                      </li>
+                    </ul>
+                  </div>
+                <!-- end shop menu -->
+                </li>
+                <li class="p-5 block down relative max-md:p-3">
+                  <a href="#" class="block relative duration-300">Blog</a>
+                <!-- start blog menu -->
+                  <div class="other absolute max-md:left-16 max-md:top-0 max-md:mt-0">
+                    <ul class="mt-3 bg-white  w-52 max-md:p-0 max-md:ml-3">
+                      <li>
+                        <a href="blog.html" class="block p-3 pr-10 border-b duration-500">blog</a>
+                      </li>
+                      <li>
+                        <a href="#" class="block p-3 pr-10 duration-500">blog details</a>
+                      </li>
+                    </ul>
+                  </div>
+                <!-- end blog menu -->
+                </li>
+                <li class="p-5 block down relative max-md:p-3">
+                  <a href="#" class="block relative duration-300">Pages</a>
+                  <!--start pages menu -->
+                  <div class="other absolute max-md:left-16 max-md:top-0 max-md:mt-0">
+                    <ul class="mt-3 bg-white w-52 max-md:p-0 max-md:ml-3">
+                      <li>
+                        <a href="login-page.html" class="block p-3 pr-10 border-b duration-500">log in</a>
+                      </li>
+                      <li>
+                        <a href="tracking-page.html" class="block p-3 pr-10 duration-500">tracking</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- end pages menu -->
+                </li>
+                <li class="p-5 block max-md:p-3">
+                  <a href="contact-page.html" class="block duration-300">Contact</a>
+                </li>
+                <ul class="flex other-links max-md:flex-col">
+                  <li class="p-3 block">
+                    <a href="#" class="block duration-300"><i class="fa-solid fa-bag-shopping"></i></a>
+                  </li>
+                  <li class="p-3 block relative">
+                    <i class="fa-solid fa-magnifying-glass cursor-pointer"></i>
+                  </li>
+                </ul>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+    <main>
+      <!-- start intro section  -->
+      <section class="shop-category-intro pt-14 ">
+        <div class="shop-intro">
+          <div class="my-container w-full flex justify-end">
+            <div class="cont w-1/2 max-lg:w-full  py-32">
+              <h1 class="capitalize text-white text-5xl font-bold text-center max-lg:text-left">shop category page</h1>
+              <div class="links flex gap-4 pt-4 justify-center max-lg:justify-start">
+                <div class="text-white capitalize"><a href="index.html">home</a></div>
+                <div class="text-white capitalize"><i class="fa-solid fa-arrow-right"></i></div>
+                <div class="text-white capitalize"><a href="#">shop</a></div>
+                <div class="text-white capitalize"><i class="fa-solid fa-arrow-right"></i></div>
+                <div class="text-white capitalize"><a href="#">Fashion Category</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end intro section  -->
+      <!-- start shop category content  -->
+      <section class="shop-category pt-24 pb-24">
+        <div class="my-container ">
+          <div class="category flex gap-10 max-md:flex-col">
+            <!-- start brows category  -->
+            <div class="brows-Categories w-1/4 flex gap-12 flex-col max-xl:w-2/5 max-md:w-full">
+              <div class="brows shadow-lg">
+                <div class="label p-4 ">
+                  <h2 class=" text-white text-lg">Browse Categories</h2>
+                </div>
+                <div class="details py-3 px-2">
+                  <ul class="details-ul">
+                    <!-- 1 -->
+                    <li class="">
+                      <details class="border-b py-3 px-0">
+                        <summary class="duration-300">Fruits and Vegetables<span class="opacity-50 ml-2 text-sm">(53)</span></summary>
+                        <ul>
+                          <li class="px-6 py-3 border-b"><a href="#" class="duration-300">Frozen Fish</a><span class="opacity-50 ml-2 text-sm">(13)</span></li>
+                          <li class="px-6 py-3 border-b"><a href="#" class="duration-300">Dried Fish</a><span class="opacity-50 ml-2 text-sm">(09)</span></li>
+                          <li class="px-6 py-3 border-b"><a href="#" class="duration-300">Fresh Fish</a><span class="opacity-50 ml-2 text-sm">(17)</span></li>
+                          <li class="px-6 py-3 border-b"><a href="#" class="duration-300">Meat Alternatives</a><span class="opacity-50 ml-2 text-sm">(01)</span></li>
+                          <li class="px-6 pb-0 pt-3"><a href="#" class="duration-300">meat</a><span class="opacity-50 ml-2 text-sm">(11)</span></li>
+                          </ul>
+                      </details>
+                    </li>
+                  <!-- 2 -->
+                    <li class="">
+                      <details class="border-b py-3 px-0">
+                        <summary class="duration-300">Meat and Fish<span class="opacity-50 ml-2 text-sm">(53)</span></summary>
+                        <ul>
+                          <li class="px-6 py-3 border-b"><a href="#" class="duration-300">Frozen Fish</a><span class="opacity-50 ml-2 text-sm">(13)</span></li>
+                          <li class="px-6 py-3 border-b"><a href="#" class="duration-300">Dried Fish</a><span class="opacity-50 ml-2 text-sm">(09)</span></li>
+                          <li class="px-6 py-3 border-b"><a href="#" class="duration-300">Fresh Fish</a><span class="opacity-50 ml-2 text-sm">(17)</span></li>
+                          <li class="px-6 py-3 border-b"><a href="#" class="duration-300">Meat Alternatives</a><span class="opacity-50 ml-2 text-sm">(01)</span></li>
+                          <li class="px-6 pb-0 pt-3"><a href="#" class="duration-300">meat</a><span class="opacity-50 ml-2 text-sm">(11)</span></li>
+                          </ul>
+                      </details>
+                    </li>
+                    <!-- 3 -->
+                    <li class="">
+                      <details class="border-b py-3 px-0">
+                        <summary class="duration-300">Cooking<span class="opacity-50 ml-2 text-sm">(53)</span></summary>
+                        <ul>
+                          <li class="px-6 py-3 border-b"><a href="#" class="duration-300">Frozen Fish</a><span class="opacity-50 ml-2 text-sm">(13)</span></li>
+                          <li class="px-6 py-3 border-b"><a href="#" class="duration-300">Dried Fish</a><span class="opacity-50 ml-2 text-sm">(09)</span></li>
+                          <li class="px-6 py-3 border-b"><a href="#" class="duration-300">Fresh Fish</a><span class="opacity-50 ml-2 text-sm">(17)</span></li>
+                          <li class="px-6 py-3 border-b"><a href="#" class="duration-300">Meat Alternatives</a><span class="opacity-50 ml-2 text-sm">(01)</span></li>
+                          <li class="px-6 pb-0 pt-3"><a href="#" class="duration-300">meat</a><span class="opacity-50 ml-2 text-sm">(11)</span></li>
+                          </ul>
+                      </details>
+                    </li>
+                    <!-- 4 -->
+                    <li class="">
+                      <details class="border-b py-3 px-0">
+                        <summary class="duration-300">Beverages<span class="opacity-50 ml-2 text-sm">(53)</span></summary>
+                        <ul>
+                          <li class="px-6 py-3 border-b"><a href="#" class="duration-300">Frozen Fish</a><span class="opacity-50 ml-2 text-sm">(13)</span></li>
+                          <li class="px-6 py-3 border-b"><a href="#" class="duration-300">Dried Fish</a><span class="opacity-50 ml-2 text-sm">(09)</span></li>
+                          <li class="px-6 py-3 border-b"><a href="#" class="duration-300">Fresh Fish</a><span class="opacity-50 ml-2 text-sm">(17)</span></li>
+                          <li class="px-6 py-3 border-b"><a href="#" class="duration-300">Meat Alternatives</a><span class="opacity-50 ml-2 text-sm">(01)</span></li>
+                          <li class="px-6 pb-0 pt-3"><a href="#" class="duration-300">meat</a><span class="opacity-50 ml-2 text-sm">(11)</span></li>
+                          </ul>
+                      </details>
+                    </li>
+                    <!-- 5 -->
+                    <li class="">
+                      <details class="border-b py-3 px-0">
+                        <summary class="duration-300">Home and Cleaning<span class="opacity-50 ml-2 text-sm">(53)</span></summary>
+                        <ul>
+                          <li class="px-6 py-3 border-b"><a href="#" class="duration-300">Frozen Fish</a><span class="opacity-50 ml-2 text-sm">(13)</span></li>
+                          <li class="px-6 py-3 border-b"><a href="#" class="duration-300">Dried Fish</a><span class="opacity-50 ml-2 text-sm">(09)</span></li>
+                          <li class="px-6 py-3 border-b"><a href="#" class="duration-300">Fresh Fish</a><span class="opacity-50 ml-2 text-sm">(17)</span></li>
+                          <li class="px-6 py-3 border-b"><a href="#" class="duration-300">Meat Alternatives</a><span class="opacity-50 ml-2 text-sm">(01)</span></li>
+                          <li class="px-6 pb-0 pt-3"><a href="#" class="duration-300">meat</a><span class="opacity-50 ml-2 text-sm">(11)</span></li>
+                          </ul>
+                      </details>
+                    </li>
+                    <!-- 6 -->
+                    <li class="border-b py-3 px-0"><a href="#" class="pl-4 py-3 duration-300">Pest Control</a><span class="opacity-50 ml-2 text-sm">(11)</span></li>
+                    <!-- 7 -->
+                    <li class="">
+                      <details class="border-b py-3 px-0">
+                        <summary class="duration-300">Office Products<span class="opacity-50 ml-2 text-sm">(53)</span></summary>
+                        <ul>
+                          <li class="px-6 py-3 border-b"><a href="#" class="duration-300">Frozen Fish</a><span class="opacity-50 ml-2 text-sm">(13)</span></li>
+                          <li class="px-6 py-3 border-b"><a href="#" class="duration-300">Dried Fish</a><span class="opacity-50 ml-2 text-sm">(09)</span></li>
+                          <li class="px-6 py-3 border-b"><a href="#" class="duration-300">Fresh Fish</a><span class="opacity-50 ml-2 text-sm">(17)</span></li>
+                          <li class="px-6 py-3 border-b"><a href="#" class="duration-300">Meat Alternatives</a><span class="opacity-50 ml-2 text-sm">(01)</span></li>
+                          <li class="px-6 pb-0 pt-3"><a href="#" class="duration-300">meat</a><span class="opacity-50 ml-2 text-sm">(11)</span></li>
+                          </ul>
+                      </details>
+                    </li>
+                    <!-- 8 -->
+                    <li class="">
+                      <details class="border-b py-3 px-0">
+                        <summary class="duration-300">Beauty Products<span class="opacity-50 ml-2 text-sm">(53)</span></summary>
+                        <ul>
+                          <li class="px-6 py-3 border-b"><a href="#" class="duration-300">Frozen Fish</a><span class="opacity-50 ml-2 text-sm">(13)</span></li>
+                          <li class="px-6 py-3 border-b"><a href="#" class="duration-300">Dried Fish</a><span class="opacity-50 ml-2 text-sm">(09)</span></li>
+                          <li class="px-6 py-3 border-b"><a href="#" class="duration-300">Fresh Fish</a><span class="opacity-50 ml-2 text-sm">(17)</span></li>
+                          <li class="px-6 py-3 border-b"><a href="#" class="duration-300">Meat Alternatives</a><span class="opacity-50 ml-2 text-sm">(01)</span></li>
+                          <li class="px-6 pb-0 pt-3"><a href="#" class="duration-300">meat</a><span class="opacity-50 ml-2 text-sm">(11)</span></li>
+                          </ul>
+                      </details>
+                    </li>
+                    <!-- 9 -->
+                    <li class="">
+                      <details class="border-b py-3 px-0">
+                        <summary class="duration-300">Health Products<span class="opacity-50 ml-2 text-sm">(53)</span></summary>
+                        <ul>
+                          <li class="px-6 py-3 border-b"><a href="#" class="duration-300">Frozen Fish</a><span class="opacity-50 ml-2 text-sm">(13)</span></li>
+                          <li class="px-6 py-3 border-b"><a href="#" class="duration-300">Dried Fish</a><span class="opacity-50 ml-2 text-sm">(09)</span></li>
+                          <li class="px-6 py-3 border-b"><a href="#" class="duration-300">Fresh Fish</a><span class="opacity-50 ml-2 text-sm">(17)</span></li>
+                          <li class="px-6 py-3 border-b"><a href="#" class="duration-300">Meat Alternatives</a><span class="opacity-50 ml-2 text-sm">(01)</span></li>
+                          <li class="px-6 pb-0 pt-3"><a href="#" class="duration-300">meat</a><span class="opacity-50 ml-2 text-sm">(11)</span></li>
+                          </ul>
+                      </details>
+                    </li>
+                    <!-- 10 -->
+                    <li class="border-b py-3 px-0"><a href="#" class="pl-4 py-3 duration-300">Pet Care</a><span class="opacity-50 ml-2 text-sm">(11)</span></li>
+                    <!-- 11 -->
+                    <li class="">
+                      <details class="border-b py-3 px-0">
+                        <summary class="duration-300">Home Appliances<span class="opacity-50 ml-2 text-sm">(53)</span></summary>
+                        <ul>
+                          <li class="px-6 py-3 border-b"><a href="#" class="duration-300">Frozen Fish</a><span class="opacity-50 ml-2 text-sm">(13)</span></li>
+                          <li class="px-6 py-3 border-b"><a href="#" class="duration-300">Dried Fish</a><span class="opacity-50 ml-2 text-sm">(09)</span></li>
+                          <li class="px-6 py-3 border-b"><a href="#" class="duration-300">Fresh Fish</a><span class="opacity-50 ml-2 text-sm">(17)</span></li>
+                          <li class="px-6 py-3 border-b"><a href="#" class="duration-300">Meat Alternatives</a><span class="opacity-50 ml-2 text-sm">(01)</span></li>
+                          <li class="px-6 pb-0 pt-3"><a href="#" class="duration-300">meat</a><span class="opacity-50 ml-2 text-sm">(11)</span></li>
+                          </ul>
+                      </details>
+                    </li>
+                    <!-- 12 -->
+                    <li class="">
+                      <details class=" py-3 px-0">
+                        <summary class="duration-300">Baby Care<span class="opacity-50 ml-2 text-sm">(53)</span></summary>
+                        <ul>
+                          <li class="px-6 py-3 border-b"><a href="#" class="duration-300">Frozen Fish</a><span class="opacity-50 ml-2 text-sm">(13)</span></li>
+                          <li class="px-6 py-3 border-b"><a href="#" class="duration-300">Dried Fish</a><span class="opacity-50 ml-2 text-sm">(09)</span></li>
+                          <li class="px-6 py-3 border-b"><a href="#" class="duration-300">Fresh Fish</a><span class="opacity-50 ml-2 text-sm">(17)</span></li>
+                          <li class="px-6 py-3 border-b"><a href="#" class="duration-300">Meat Alternatives</a><span class="opacity-50 ml-2 text-sm">(01)</span></li>
+                          <li class="px-6 pb-0 pt-3"><a href="#" class="duration-300">meat</a><span class="opacity-50 ml-2 text-sm">(11)</span></li>
+                          </ul>
+                      </details>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="product-filter shadow-lg">
+                <div class="label p-4">
+                  <h2 class=" text-white text-lg">Product Filters</h2>
+                </div>
+                <div class="filter p-4 pb-8">
+                  <h3 class="font-bold text-lg mb-3 capitalize">BRANDS</h3>
+                  <form action="">
+                    <ul>
+                      <li class="flex items-center gap-1 mb-3">
+                        <input type="radio" id="apple" name="brand" class="cursor-pointer">
+                        <label class="cursor-pointer text-gray-500" for="apple">apple <span>(20)</span></label>
+                      </li>
+                      <li class="flex items-center gap-1 mb-3">
+                        <input type="radio" id="samsung" name="brand" class="cursor-pointer">
+                        <label class="cursor-pointer text-gray-500" for="samsung">samsung <span>(20)</span></label>
+                      </li>
+                      <li class="flex items-center gap-1 mb-3">
+                        <input type="radio" id="asus" name="brand" class="cursor-pointer">
+                        <label class="cursor-pointer text-gray-500" for="asus">asus<span>(20)</span></label>
+                      </li>
+                      <li class="flex items-center gap-1 mb-3">
+                        <input type="radio" id="nokia" name="brand" class="cursor-pointer">
+                        <label class="cursor-pointer text-gray-500" for="nokia">nokia<span>(20)</span></label>
+                      </li>
+                    </ul>
+                  </form>
+                </div>
+                <div class="filter p-4 pt-8 border-t border-b">
+                  <h3 class="font-bold text-lg mb-3 capitalize">colors</h3>
+                  <form action="#">
+                    <ul>
+                      <li class="flex items-center gap-1 mb-3">
+                        <input type="radio" id="green" name="color" class="cursor-pointer">
+                        <label for="green" class="cursor-pointer text-gray-500">green <span>(20)</span></label>
+                      </li>
+                      <li class="flex items-center gap-1 mb-3">
+                        <input type="radio" id="red" name="color" class="cursor-pointer">
+                        <label for="red" class="cursor-pointer text-gray-500">red <span>(20)</span></label>
+                      </li>
+                      <li class="flex items-center gap-1 mb-3">
+                        <input type="radio" id="black" name="color" class="cursor-pointer">
+                        <label for="black" class="cursor-pointer text-gray-500">black <span>(20)</span></label>
+                      </li>
+                      <li class="flex items-center gap-1 mb-3">
+                        <input type="radio" id="gold" name="color" class="cursor-pointer">
+                        <label for="gold" class="cursor-pointer text-gray-500">gold <span>(20)</span></label>
+                      </li>
+                    </ul>
+                  </form>
+                </div>
+                <div class="price  p-4 pt-8">
+                  <h3 class="font-bold text-lg mb-3 capitalize">price</h3>
+                  <div class="total-price pt-10">
+                    <span class="">price:</span>
+                    <span class="opacity-50">$500.00 to $4000.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end brows category  -->
+            <div class="shop-cont w-3/4 flex flex-col gap-12 max-xl:w-3/5 max-md:w-full">
+              <!-- start head  -->
+              <div class="head w-full flex justify-between items-center p-4 max-xl:flex-col gap-6 max-xl:items-start">
+                <!-- start select menus  -->
+                <div class="select-men flex gap-4">
+                  <div class="select ">
+                    <select name="" id="" class="relative outline-none border-none py-2 pl-4 pr-8 appearance-none">
+                      <optgroup label="default sorting">
+                        <option value="" class="">default sorting</option>
+                        <option value="" class="">default sorting</option>
+                    </optgroup>
+                  </select>
+                  <i class="fa-solid fa-caret-down absolute top-1/2 right-0 -translate-y-2/4 pr-2 pointer-events-none"></i>
+                  </div>
+                  <div class="select ">
+                    <select name="" id="" class="relative outline-none border-none py-2 pl-4 pr-8 appearance-none">
+                      <optgroup label="show 12">
+                        <option value="" class="">show 12</option>
+                        <option value="" class="">show 12</option>
+                    </optgroup>
+                  </select>
+                  <i class="fa-solid fa-caret-down absolute top-1/2 right-0 -translate-y-2/4 pr-2 pointer-events-none"></i>
+                  </div>
+                </div>
+                <!-- end select menus  -->
+                <!-- start counter  -->
+                <div class="counter flex gap-2">
+                    <div class=""><a href="#" class="w-9 h-9 bg-white flex items-center justify-center duration-300"><i class="fa-solid fa-arrow-left"></i></a></div>
+                    <div class=""><a href="#" class="w-9 h-9 bg-white flex items-center justify-center duration-300 active">1</a></div>
+                    <div class=""><a href="#" class="w-9 h-9 bg-white flex items-center justify-center duration-300">2</a></div>
+                    <div class=""><a href="#" class="w-9 h-9 bg-white flex items-center justify-center duration-300">3</a></div>
+                    <div class=""><a href="#" class="font-bold text-lg">...</a></div>
+                    <div class=""><a href="#" class="w-9 h-9 bg-white flex items-center justify-center duration-300">6</a></div>
+                    <div class=""><a href="#" class="w-9 h-9 bg-white flex items-center justify-center duration-300"><i class="fa-solid fa-arrow-right"></i></a></div>
+                </div>
+                <!-- end counter  -->
+              </div>
+              <!-- end head  -->
+              <!-- start content  -->
+              <div class="cards  grid gap-8 ">
+                <!-- 1 -->
+                <div class="box">
+              <div class="image">
+                <img src="./images/p1.jpg.webp" alt="" class="w-full">
+              </div>
+              <div class="dis">
+                <h5 class="text-lg uppercase mb-3 mt-3">adidas New Hammer solfege Sports person</h5>
+              </div>
+              <div class="price flex gap-4">
+                <span class="font-bold">150.00$</span>
+                <span class="font-bold line-through opacity-50">210.00$</span>
+              </div>
+              <div class="information flex gap-2 pt-4">
+                <!-- 1 -->
+                <a href="#" class="inf ">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                  <p class="">add to bag</p>
+                </a>
+                <!-- 2 -->
+                <a href="#" class="inf ">
+                  <i class="fa-regular fa-heart"></i>
+                  <p class="">wishes</p>
+                </a>
+                <!-- 3 -->
+                <a href="#" class="inf ">
+                  <i class="fa-solid fa-repeat"></i>
+                  <p class="">compare</p>
+                </a>
+                <!-- 4 -->
+                <a href="#" class="inf ">
+                  <i class="fa-solid fa-minimize"></i>
+                  <p class="">view more</p>
+                </a>
+              </div>
+                </div>
+                <!-- 2 -->
+                <div class="box">
+              <div class="image">
+                <img src="./images/p2.jpg.webp" alt="" class="w-full">
+              </div>
+              <div class="dis">
+                <h5 class="text-lg uppercase mb-3 mt-3">adidas New Hammer solfege Sports person</h5>
+              </div>
+              <div class="price flex gap-4">
+                <span class="font-bold">150.00$</span>
+                <span class="font-bold line-through opacity-50">210.00$</span>
+              </div>
+              <div class="information flex gap-2 pt-4">
+                <!-- 1 -->
+                <a href="#" class="inf ">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                  <p class="">add to bag</p>
+                </a>
+                <!-- 2 -->
+                <a href="#" class="inf ">
+                  <i class="fa-regular fa-heart"></i>
+                  <p class="">wishes</p>
+                </a>
+                <!-- 3 -->
+                <a href="#" class="inf ">
+                  <i class="fa-solid fa-repeat"></i>
+                  <p class="">compare</p>
+                </a>
+                <!-- 4 -->
+                <a href="#" class="inf ">
+                  <i class="fa-solid fa-minimize"></i>
+                  <p class="">view more</p>
+                </a>
+              </div>
+                </div>
+                <!-- 3 -->
+                <div class="box">
+              <div class="image">
+                <img src="./images/p3.jpg.webp" alt="" class="w-full">
+              </div>
+              <div class="dis">
+                <h5 class="text-lg uppercase mb-3 mt-3">adidas New Hammer solfege Sports person</h5>
+              </div>
+              <div class="price flex gap-4">
+                <span class="font-bold">150.00$</span>
+                <span class="font-bold line-through opacity-50">210.00$</span>
+              </div>
+              <div class="information flex gap-2 pt-4">
+                <!-- 1 -->
+                <a href="#" class="inf ">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                  <p class="">add to bag</p>
+                </a>
+                <!-- 2 -->
+                <a href="#" class="inf ">
+                  <i class="fa-regular fa-heart"></i>
+                  <p class="">wishes</p>
+                </a>
+                <!-- 3 -->
+                <a href="#" class="inf ">
+                  <i class="fa-solid fa-repeat"></i>
+                  <p class="">compare</p>
+                </a>
+                <!-- 4 -->
+                <a href="#" class="inf ">
+                  <i class="fa-solid fa-minimize"></i>
+                  <p class="">view more</p>
+                </a>
+              </div>
+                </div>
+                <!-- 4 -->
+                <div class="box">
+              <div class="image">
+                <img src="./images/p4.jpg.webp" alt="" class="w-full">
+              </div>
+              <div class="dis">
+                <h5 class="text-lg uppercase mb-3 mt-3">adidas New Hammer solfege Sports person</h5>
+              </div>
+              <div class="price flex gap-4">
+                <span class="font-bold">150.00$</span>
+                <span class="font-bold line-through opacity-50">210.00$</span>
+              </div>
+              <div class="information flex gap-2 pt-4">
+                <!-- 1 -->
+                <a href="#" class="inf ">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                  <p class="">add to bag</p>
+                </a>
+                <!-- 2 -->
+                <a href="#" class="inf ">
+                  <i class="fa-regular fa-heart"></i>
+                  <p class="">wishes</p>
+                </a>
+                <!-- 3 -->
+                <a href="#" class="inf ">
+                  <i class="fa-solid fa-repeat"></i>
+                  <p class="">compare</p>
+                </a>
+                <!-- 4 -->
+                <a href="#" class="inf ">
+                  <i class="fa-solid fa-minimize"></i>
+                  <p class="">view more</p>
+                </a>
+              </div>
+                </div>
+                <!-- 5 -->
+                <div class="box">
+              <div class="image">
+                <img src="./images/p5.jpg.webp" alt="" class="w-full">
+              </div>
+              <div class="dis">
+                <h5 class="text-lg uppercase mb-3 mt-3">adidas New Hammer solfege Sports person</h5>
+              </div>
+              <div class="price flex gap-4">
+                <span class="font-bold">150.00$</span>
+                <span class="font-bold line-through opacity-50">210.00$</span>
+              </div>
+              <div class="information flex gap-2 pt-4">
+                <!-- 1 -->
+                <a href="#" class="inf ">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                  <p class="">add to bag</p>
+                </a>
+                <!-- 2 -->
+                <a href="#" class="inf ">
+                  <i class="fa-regular fa-heart"></i>
+                  <p class="">wishes</p>
+                </a>
+                <!-- 3 -->
+                <a href="#" class="inf ">
+                  <i class="fa-solid fa-repeat"></i>
+                  <p class="">compare</p>
+                </a>
+                <!-- 4 -->
+                <a href="#" class="inf ">
+                  <i class="fa-solid fa-minimize"></i>
+                  <p class="">view more</p>
+                </a>
+              </div>
+                </div>
+                <!-- 6 -->
+                <div class="box">
+              <div class="image">
+                <img src="./images/p6.jpg.webp" alt="" class="w-full">
+              </div>
+              <div class="dis">
+                <h5 class="text-lg uppercase mb-3 mt-3">adidas New Hammer solfege Sports person</h5>
+              </div>
+              <div class="price flex gap-4">
+                <span class="font-bold">150.00$</span>
+                <span class="font-bold line-through opacity-50">210.00$</span>
+              </div>
+              <div class="information flex gap-2 pt-4">
+                <!-- 1 -->
+                <a href="#" class="inf ">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                  <p class="">add to bag</p>
+                </a>
+                <!-- 2 -->
+                <a href="#" class="inf ">
+                  <i class="fa-regular fa-heart"></i>
+                  <p class="">wishes</p>
+                </a>
+                <!-- 3 -->
+                <a href="#" class="inf ">
+                  <i class="fa-solid fa-repeat"></i>
+                  <p class="">compare</p>
+                </a>
+                <!-- 4 -->
+                <a href="#" class="inf ">
+                  <i class="fa-solid fa-minimize"></i>
+                  <p class="">view more</p>
+                </a>
+              </div>
+                </div>
+              </div>
+              <!-- end content  -->
+              <!-- start foot  -->
+              <div class="foot w-full flex justify-between items-center p-4 max-xl:flex-col gap-6 max-xl:items-start">
+                <!-- start select menus  -->
+                <div class="select-men flex gap-4">
+                  <div class="select ">
+                    <select name="" id="" class="relative outline-none border-none py-2 pl-4 pr-8 appearance-none">
+                      <optgroup label="show 12">
+                        <option value="" class="">show 12</option>
+                        <option value="" class="">show 12</option>
+                    </optgroup>
+                  </select>
+                  <i class="fa-solid fa-caret-down absolute top-1/2 right-0 -translate-y-2/4 pr-2 pointer-events-none"></i>
+                  </div>
+                </div>
+                <!-- end select menus  -->
+                <!-- start counter  -->
+                <div class="counter flex gap-2">
+                    <div class=""><a href="#" class="w-9 h-9 bg-white flex items-center justify-center duration-300"><i class="fa-solid fa-arrow-left"></i></a></div>
+                    <div class=""><a href="#" class="w-9 h-9 bg-white flex items-center justify-center duration-300 active">1</a></div>
+                    <div class=""><a href="#" class="w-9 h-9 bg-white flex items-center justify-center duration-300">2</a></div>
+                    <div class=""><a href="#" class="w-9 h-9 bg-white flex items-center justify-center duration-300">3</a></div>
+                    <div class=""><a href="#" class="font-bold text-lg">...</a></div>
+                    <div class=""><a href="#" class="w-9 h-9 bg-white flex items-center justify-center duration-300">6</a></div>
+                    <div class=""><a href="#" class="w-9 h-9 bg-white flex items-center justify-center duration-300"><i class="fa-solid fa-arrow-right"></i></a></div>
+                </div>
+                <!-- end counter  -->
+              </div>
+              <!-- end foot  -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end shop category content  -->
+      <!-- start last deals  -->
+      <section class="last-deals-section  pb-24">
+      <div class="my-container ">
+        <div class="last-deals ">
+          <div class="flex justify-center mb-16 ">
+            <div class="deals-intro text-center w-1/2 max-md:w-full">
+              <h2 class="text-4xl mb-4 font-bold">Deals of the Week</h2>
+              <p class="">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div class="cont flex max-md:flex-col max-md:gap-7">
+            <!-- start left -->
+            <div class="left grid gap-5 w-3/4 max-md:w-full">
+              <!-- 1 -->
+              <div class="box flex items-center gap-4">
+                <div class="image">
+                  <img src="./images/r1.jpg.webp" alt="">
+                </div>
+                <div class="info flex flex-col gap-1">
+                  <a href="#">BLACK LACE HEELS</a>
+                  <div class="price">
+                    <span>180.00$</span>
+                    <span class="line-through opacity-50">220.00$</span>
+                  </div>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="box flex items-center gap-4">
+                <div class="image">
+                  <img src="./images/r1.jpg.webp" alt="">
+                </div>
+                <div class="info flex flex-col gap-1">
+                  <a href="#">BLACK LACE HEELS</a>
+                  <div class="price">
+                    <span>180.00$</span>
+                    <span class="line-through opacity-50">220.00$</span>
+                  </div>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="box flex items-center gap-4">
+                <div class="image">
+                  <img src="./images/r2.jpg.webp" alt="">
+                </div>
+                <div class="info flex flex-col gap-1">
+                  <a href="#">BLACK LACE HEELS</a>
+                  <div class="price">
+                    <span>180.00$</span>
+                    <span class="line-through opacity-50">220.00$</span>
+                  </div>
+                </div>
+              </div>
+              <!-- 4 -->
+              <div class="box flex items-center gap-4">
+                <div class="image">
+                  <img src="./images/r3.jpg.webp" alt="">
+                </div>
+                <div class="info flex flex-col gap-1">
+                  <a href="#">BLACK LACE HEELS</a>
+                  <div class="price">
+                    <span>180.00$</span>
+                    <span class="line-through opacity-50">220.00$</span>
+                  </div>
+                </div>
+              </div>
+              <!-- 5 -->
+              <div class="box flex items-center gap-4">
+                <div class="image">
+                  <img src="./images/r5.jpg.webp" alt="">
+                </div>
+                <div class="info flex flex-col gap-1">
+                  <a href="#">BLACK LACE HEELS</a>
+                  <div class="price">
+                    <span>180.00$</span>
+                    <span class="line-through opacity-50">220.00$</span>
+                  </div>
+                </div>
+              </div>
+              <!-- 6 -->
+              <div class="box flex items-center gap-4">
+                <div class="image">
+                  <img src="./images/r6.jpg.webp" alt="">
+                </div>
+                <div class="info flex flex-col gap-1">
+                  <a href="#">BLACK LACE HEELS</a>
+                  <div class="price">
+                    <span>180.00$</span>
+                    <span class="line-through opacity-50">220.00$</span>
+                  </div>
+                </div>
+              </div>
+              <!-- 7 -->
+              <div class="box flex items-center gap-4">
+                <div class="image">
+                  <img src="./images/r7.jpg.webp" alt="">
+                </div>
+                <div class="info flex flex-col gap-1">
+                  <a href="#">BLACK LACE HEELS</a>
+                  <div class="price">
+                    <span>180.00$</span>
+                    <span class="line-through opacity-50">220.00$</span>
+                  </div>
+                </div>
+              </div>
+              <!-- 8 -->
+              <div class="box flex items-center gap-4">
+                <div class="image">
+                  <img src="./images/r9.jpg.webp" alt="">
+                </div>
+                <div class="info flex flex-col gap-1">
+                  <a href="#">BLACK LACE HEELS</a>
+                  <div class="price">
+                    <span>180.00$</span>
+                    <span class="line-through opacity-50">220.00$</span>
+                  </div>
+                </div>
+              </div>
+              <!-- 9 -->
+              <div class="box flex items-center gap-4">
+                <div class="image">
+                  <img src="./images/r10.jpg.webp" alt="">
+                </div>
+                <div class="info flex flex-col gap-1">
+                  <a href="#">BLACK LACE HEELS</a>
+                  <div class="price">
+                    <span>180.00$</span>
+                    <span class="line-through opacity-50">220.00$</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end left  -->
+            <!-- start right -->
+            <div class="right w-1/4 max-md:w-full">
+              <div class="image">
+                <a href="#"><img src="./images/c5.jpg.webp" alt=""></a>
+              </div>
+            </div>
+            <!-- end right -->
+          </div>
+        </div>
+      </div>
+      </section>
+      <!-- end last deals  -->
+    </main>
+    <footer class="pt-28 pb-28">
+      <div class="my-container ">
+        <div class="footer flex gap-8 max-xl:flex-wrap max-md:flex-col">
+          <div class="box flex-1">
+            <h5 class="text-white text-xl font-bold mb-8 capitalize">about us</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore dolore magna aliqua.
+            </p>
+          </div>
+          <div class="box flex-1">
+            <h5 class="text-white text-xl font-bold mb-10 capitalize">Newsletter</h5>
+            <p class="mb-6">Stay update with our latest</p>
+            <div class="input relative w-fit h-fit overflow-hidden">
+              <input type="email" placeholder="enter email" class="block py-2 pl-4 pr-10 outline-none border-none ">
+              <a href="#"><i class="fa-solid fa-arrow-right block absolute top-1/2 right-0 -translate-y-1/2 p-3 text-white"></i></a>
+            </div>
+          </div>
+          <div class="box flex-1">
+            <h5 class="text-white text-xl font-bold mb-8 capitalize">Instagram Feed</h5>
+            <div class="insta-gallery grid gap-2">
+              <div class="image">
+                <img src="./images/i1.jpg.webp" alt="" class="md:w-full">
+              </div>
+              <div class="image">
+                <img src="./images/i2.jpg.webp" alt="" class="md:w-full">
+              </div>
+              <div class="image">
+                <img src="./images/i3.jpg.webp" alt="" class="md:w-full">
+              </div>
+              <div class="image">
+                <img src="./images/i4.jpg.webp" alt="" class="md:w-full">
+              </div>
+              <div class="image">
+                <img src="./images/i5.jpg.webp" alt="" class="md:w-full">
+              </div>
+              <div class="image">
+                <img src="./images/i6.jpg.webp" alt="" class="md:w-full">
+              </div>
+              <div class="image">
+                <img src="./images/i7.jpg.webp" alt="" class="md:w-full">
+              </div>
+              <div class="image">
+                <img src="./images/i8.jpg.webp" alt="" class="md:w-full">
+              </div>
+            </div>
+          </div>
+          <div class="box flex-1">
+            <h5 class="text-white text-xl font-bold mb-8 capitalize">follow us</h5>
+            <p class="mb-6">Let us be social</p>
+            <div class="social flex gap-6">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+              <a href="#"><i class="fa-brands fa-behance"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
